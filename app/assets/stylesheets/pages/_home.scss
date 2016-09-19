@@ -1,4 +1,13 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+ .image-interval {
+  height: calc(100vh - 300px);
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-grey {
+  background-color: #F5F5F5;
+}
+.section-padding {
+	padding: 70px 10px;
+}
