@@ -1,12 +1,13 @@
 /* Main class */
 .navbar-beaco {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  transition: all 0.3s ease;
   display: flex;
   height: 70px;
-  padding: 0px 30px;
+  padding: 0px 60px;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 
 /* Optional class to fix the navbar on top */
@@ -14,7 +15,7 @@
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 1001;
   width: 100%;
 }
 
@@ -30,20 +31,28 @@
   justify-content: space-between;
 }
 
-/* Navbar item */
-.navbar-beaco-item {
-  flex: 0 1 auto;
-  cursor: pointer;
-  padding: 0 20px;
+.navbar-menu {
+  padding-right: 40px;
 }
+
+/* Navbar item */
+// .navbar-beaco-item {
+//   flex: 0 1 auto;
+//   cursor: pointer;
+//   padding: 0 20px;
+// }
 
 /* Navbar standard link */
 .navbar-beaco-link {
-  color: #616668;
-  font-size: 14px;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  line-height: 0.5px;
 }
 .navbar-beaco-link:hover {
-  color: #da552f;
+  color: #8FF0E8;
   text-decoration: none;
 }
 
