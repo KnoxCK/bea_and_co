@@ -1,4 +1,4 @@
-<div class="navbar-beaco">
+<div class="navbar-beaco navbar-beaco-fixed">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-beaco-brand" do %>
     <%= image_tag "logo.png" %>
@@ -46,12 +46,29 @@
     <% else %>
 
       <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-beaco-item navbar-beaco-link" %>
+      <!--<%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-beaco-item navbar-beaco-link" %>
 
     <% end %>
+    
+<!-- Navbar menu -->
+    <!-- Home link -->
+    <%= link_to t("#", default: "HOME"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- About link -->
+    <%= link_to t("#", default: "ABOUT"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- Our Story link -->
+    <%= link_to t("#", default: "OUR STORY"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- Blog link -->
+    <%= link_to t("#", default: "BLOG"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- Services link -->
+    <%= link_to t("#", default: "SERVICES"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- Our Team link -->
+    <%= link_to t("#", default: "OUR TEAM"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- Happy People link -->
+    <%= link_to t("#", default: "HAPPY PEOPLE"), new_user_session_path, class: " navbar-beaco-link" %>
+    <!-- Contact link -->
+    <%= link_to t("#", default: "CONTACT"), new_user_session_path, class: " navbar-beaco-link" %>
 
-    <!-- Button (call-to-action) -->
-    <%= link_to t(".top_call_to_action", default: "Post stuff"), "#", class: "navbar-beaco-item navbar-beaco-button btn" %>
+    
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
