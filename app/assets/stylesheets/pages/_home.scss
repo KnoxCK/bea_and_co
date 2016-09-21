@@ -1,9 +1,10 @@
  .image-interval {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 250px);
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
 }
 .wrapper-grey {
   background-color: #F5F5F5;
