@@ -1,0 +1,43 @@
+.profile-card-white {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 3px 5px 4px #D9D9D9;
+  width: 350px;
+  padding: 20px;
+  margin: 20px auto;
+  line-height: 1.5em;
+}
+.show-profile-details {
+  padding: 30px;
+  border-left: 1px solid #f0efef;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    }
+  ul li {
+    padding: 10px 0;
+  }
+  em {
+    color: $orange;
+    font-style: normal;
+  }
+}
+.profile-avatar-large {
+  width: 50px;
+  border-radius: 50%;
+}
+.my-profile-avatar {
+  width: 100px;
+}
+.my-profile-btn {
+  margin-top: 20px;
+}
+.profile-edit-btn {
+  z-index: 10;
+}
+.background-box-grey {
+  background-color: #F8F7F7;
+  padding: 50px 100px;
+  margin-top: 50px;
+  width: 650px;
+}
