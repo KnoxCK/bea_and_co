@@ -12,9 +12,10 @@
         <%= simple_form_for current_user, url: update_profile_path do |f| %>
         <%= f.input :first_name, label: 'First Name' %>
         <%= f.input :last_name, label: 'Last Name' %>
+        <%= f.input :cv_url, label: 'CV download URL' %>
+        <%= f.input :phone_number, label: 'Your phone number' %>
         <%= f.input :photo, label: 'Photo' %>
         <%= f.input :photo_cache, as: :hidden %>
-        <%= f.input :phone_number, label: 'Your phone number' %>
         <%= f.button :submit %>
         <% end %>
       </div>
