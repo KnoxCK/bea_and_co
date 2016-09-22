@@ -6,7 +6,7 @@
 </div>
 
 <!-- First section - Personally Recommended-->
-<div class="container section-padding text-center">
+<div class="container section-padding text-center" id="about">
 	<h3>PERSONALLY RECOMMENDED</h3>
 		<p>Bea & Co is a unique London members’ agency specialising in providing families and organisations with excellent child care from the highest quality creative people. Whether private or corporate, Bea & Co offers a highly individual first class service tailored to each of our members' needs.</p>
 </div>
@@ -16,7 +16,7 @@
 </div>
 
 <!-- Second section - Our Story -->
-<div class="container section-padding">
+<div class="container section-padding" id="our-story">
 	<h3 class= "our-story-title text-center">OUR STORY</h3>
 	<div class="row">
 		<div class="col-xs-6">
@@ -57,7 +57,7 @@
 </div>
 
 <!-- Third section - Our Services -->
-<div class="our-services-banner text-center" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
+<div class="our-services-banner text-center" id="services" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
     <div class="section-padding">
     	<h3>OUR SERVICES</h3>
 	    <div class="row">
@@ -92,51 +92,76 @@
 </div>
 
 <!-- Fourth section - Our Team -->
-<div class="container section-padding text-center">
+<div class="container section-padding text-center" id="our-team">
 		<h3>OUR TEAM</h3>
 			<p>Let us introduce you to some of our amazing creative team. We are delighted to work with over 100 creatives who all maintain successful careers in theatre, film, television, dance, music, art and design. It is this unique connection that enriches our service and makes our offering extra special.</p>
 </div>
 
 <!-- Fifth section - Happy People -->
 <div class="wrapper-grey">	
-	<div class="container section-padding">
+	<div class="container section-padding" id="happy-people">
 		<div class="text-center">
 			<h3>HAPPY PEOPLE</h3>
 			<p>See what our members say about us</p>
 		</div>
-		<div class="testimonials">
+		<div>
 			<div class="row">
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 testimonials">
 					<h5>Doulla & John</h5>
 					<p>Part of the family since July 2014</p>
+					<hr>
 					<p>We have been using Bea & Co since July 2014 and can not speak highly enough of the wonderful service provided.  Our son is an actor and so often needs to be moved around places in London. We never have a moments worry about him being safely delivered to the right place at the correct time. More than providing a very safe and highly efficient  service, every single one of the Bea & Co team have been fantastic with our son, to the point where he actively looks forward to them visiting and never feels like he is being babysat. We would have absolutely no hesitation in recommending Bea & Co wholeheartedly.</p>
+					<% 5.times do %>
+    					<i class="fa fa-star"></i>
+    			<% end %>
 					<h6>Private Member</h6>
+					<span>Wandsworth</span>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 testimonials">
 					<h5>James</h5>
 					<p>Part of the family since September 2014</p>
+					<hr>
 					<p>I was thrilled with the service Amy and her team provided for us. We recently required a sitter last minute to cover a cast member’s childcare problem. Child and sitter got on wonderfully (despite never having met) and we could not have been better served. Will recommend to everyone.  10/10 service. Will use every time from now on.</p>
+					<% 5.times do %>
+    					<i class="fa fa-star"></i>
+    			<% end %>
 					<h6>Private Member</h6>
+					<span>Wandsworth</span>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 testimonials">
 					<h5>Gordon & Lorna</h5>
 					<p>Part of the family since June 2014</p>
+					<hr>
 					<p>Bea & Co. were recommended to us by a friend, to whom we are incredibly grateful. We both work in Theatre and in our line of work we often have irregular schedules with things changing at the last minute. Amy and her team have always been so flexible, helpful and understanding. They are all reliable, friendly and trustworthy and most importantly brilliant with our wee one who always has a smashing time with them. We are so delighted to have found them and would not hesitate in recommending their service to anyone looking for child care.</p>
+					<% 5.times do %>
+    					<i class="fa fa-star"></i>
+    			<% end %>
 					<h6>Private Member</h6>
+					<span>Wandsworth</span>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 testimonials">
 					<h5>Amy & Ewan</h5>
 					<p>Part of the family since September 2014</p>
+					<hr>
 					<p>My year and a half year old fell in love with Amy from the moment she met her, despite always having been reluctant to be looked after by anyone else. My daughter is now 5-and-a-half and my boy nearly 4, and they are completely wild with excitement when they know that Amy is coming! Often they can’t wait for us to go! We go away happy in the knowledge that the children are not just in safe hands but are also very happy and come back to find cakes have been baked, decorations and cards made, new games invented, new songs and dances learnt, and a lot of fun has been had. Amy is 100% reliable, firm but kind, thoughtful and trustworthy. We are so happy with them and I cannot recommend them more highly.</p>
+					<% 5.times do %>
+    					<i class="fa fa-star"></i>
+    			<% end %>
 					<h6>Private Member</h6>
+					<span>Wandsworth</span>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 testimonials">
 					<h5>Sarah</h5>
 					<p>Part of the family since February 2015</p>
+					<hr>
 					<p>Bea & Co. was recommended to me by a performer friend and I have not looked back. They have been faultless in all communications, reassuring where needed and totally understand my needs. The girls who take care of our children (8 & 10) are young, fun, efficient and full of beans. They are so amazing with the children and are on hand to help me with literally anything, from picking up milk to helping with school projects or swimming. (One of the girls even reorganised my pantry!) The children are very fond of them already and they have become a part of the family. I am a self-employed performer and when my work schedule changes, they are there ready to adapt and fill in where needed. I would highly recommend this company and feel that with this impressive young woman Amy Beadel at the helm, Bea & Co are the new way forward in childcare.</p>
+					<% 5.times do %>
+    					<i class="fa fa-star"></i>
+    			<% end %>
 					<h6>Private Member</h6>
+					<span>Wandsworth</span>
 				</div>
 			</div>
 		</div>
@@ -150,7 +175,7 @@
 </div>
 	
 <!-- Contact -->
-<div class="section-padding contact-banner text-center" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
+<div class="section-padding contact-banner text-center" id="contact" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
 	<div class="contact-content">
 		<div class="row">
 			<h3>CONTACT US</h3>
@@ -164,6 +189,9 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="section-padding jump-to text-center">
+		<%= link_to "Back to top", "#" %> 
 </div>
 
 

@@ -52,21 +52,23 @@
     
 <!-- Navbar menu -->
     <!-- Home link -->
-    <%= link_to t("#", default: "HOME"), new_user_session_path, class: " navbar-beaco-link" %>
+    <%= link_to "HOME", "#", class: " navbar-beaco-link" %>
     <!-- About link -->
-    <%= link_to t("#", default: "ABOUT"), new_user_session_path, class: " navbar-beaco-link" %>
+    <%= link_to "ABOUT", "#about", class: " navbar-beaco-link" %>
     <!-- Our Story link -->
-    <%= link_to t("#", default: "OUR STORY"), new_user_session_path, class: " navbar-beaco-link" %>
-    <!-- Blog link -->
-    <%= link_to t("#", default: "BLOG"), new_user_session_path, class: " navbar-beaco-link" %>
+    <%= link_to "OUR STORY", "#our-story", class: " navbar-beaco-link" %>
+    <!-- Blog  link -->
+    <%= link_to "BLOG", "#", class: " navbar-beaco-link" %>
     <!-- Services link -->
-    <%= link_to t("#", default: "SERVICES"), new_user_session_path, class: " navbar-beaco-link" %>
+    <%= link_to "SERVICES", "#services", class: " navbar-beaco-link" %>
     <!-- Our Team link -->
-    <%= link_to t("#", default: "OUR TEAM"), new_user_session_path, class: " navbar-beaco-link" %>
+    <%= link_to "OUR TEAM", "#our-team", class: " navbar-beaco-link" %>
     <!-- Happy People link -->
-    <%= link_to t("#", default: "HAPPY PEOPLE"), new_user_session_path, class: " navbar-beaco-link" %>
+    <%= link_to "HAPPY PEOPLE", "#happy-people", class: "navbar-beaco-link" %>
+    <!-- Chaperones link -->
+    <%= link_to "CHAPERONES", "#", class: " navbar-beaco-link" %>    
     <!-- Contact link -->
-    <%= link_to t("#", default: "CONTACT"), new_user_session_path, class: " navbar-beaco-link" %>    
+    <%= link_to "CONTACT", "#contact", class: " navbar-beaco-link" %>    
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -74,9 +76,15 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-beaco-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#our-story">OUR STORY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#our-team">OUR TEAM</a></li>
+        <li><a href="#happy-people">HAPPY PEOPLE</a></li>
+        <li><a href="#">CHAPERONES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
