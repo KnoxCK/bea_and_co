@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :applications, only: [:index, :show, :new, :create, :edit, :update]
+
   devise_for :users
 
   get "/users/:id", to: "profiles#show", as: :profile
