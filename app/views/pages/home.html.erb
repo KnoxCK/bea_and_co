@@ -1,8 +1,8 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474460052/Boy_and_plane_Image_ac1sjn.jpg');">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,10,50,0.1) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474633371/Children_Pirate_image_hbeob3.jpg');">
 	<div class="banner-content">
     <%= image_tag "logo.png", class: "main-logo" %>
-    <p>Creative Sitters and Chaperones</p>
-  </div>
+    	<p>Creative Sitters & Chaperones</p>
+  	</div>
 </div>
 
 <!-- First section - Personally Recommended-->
@@ -12,7 +12,7 @@
 </div>
 
 <!-- Interval image -->
-<div class="image-interval" style="background-image: url('http://res.cloudinary.com/ddota4fci/image/upload/v1474454565/Children_Pirate_image_hbeob3.jpg');">
+<div class="image-interval" style="background-image: url('http://res.cloudinary.com/ddota4fci/image/upload/v1474460052/Boy_and_plane_Image_ac1sjn.jpg');">
 </div>
 
 <!-- Second section - Our Story -->
@@ -175,23 +175,37 @@
 </div>
 	
 <!-- Contact -->
-<div class="section-padding contact-banner text-center" id="contact" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
+<div class="section-padding contact-banner" id="contact" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('http://res.cloudinary.com/ddota4fci/image/upload/o_84/v1474454415/Children_silhoutte_balloons_ge433c.jpg');">
 	<div class="contact-content">
-		<div class="row">
-			<h3>CONTACT US</h3>
-			<div class="col-xs-12 col-md-6">
-				<h3>Contact us direct</h3>
-				<p>+44(0) 20 3488 1184</p>
-				<p>hello@beaandco.com</p>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<h3>Send us a message</h3>
-			</div>
+		<div class="contact-left-column">
+			<h4>CONTACT US DIRECT</h4>
+			<p>+44(0) 20 3488 1184</p>
+			<p>hello@beaandco.com</p>
+		</div>
+		<div class="contact-right-column">
+			<h4>SEND US A MESSAGE</h4>
 		</div>
 	</div>
+	<div class="text-center">
+		<%= link_to "#" do %>
+    	<i class="fa fa-angle-double-up"></i>
+		<% end %>
+	</div>
 </div>
-<div class="section-padding jump-to text-center">
-		<%= link_to "Back to top", "#" %> 
+<div class="footer">
+	<div class="footer-main text-center">
+		<p>Copyright (c) 2016 Bea & Co.</p>
+		<ul>
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+		</ul>
+	</div>
+	<div class="footer-login">
+		<p><%= link_to "Login", "#", class: "	login-link" %></p>
+	</div>
 </div>
+
+	
 
 
