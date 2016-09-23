@@ -1,3 +1,60 @@
 .contact-banner {
+	position: relative;
 	color: white;
+	background-size: cover;
+	background-postion: center;
+	h4 {
+		font-size: 23px;
+		padding-bottom: 40px;
+	}
+	p {
+		font-weight: lighter;
+	}
 }
+.contact-content {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+}
+.contact-left-column {
+	width: 500px;
+	height: 225px;
+	background-color: black;
+	margin: 0 40px 20px 0;
+	padding: 20px;
+}
+.contact-right-column {
+	width: 500px;
+	height: 600px;
+	background-color: black;
+	margin-left: 40px;
+	padding: 20px;
+}
+.fa-angle-double-up {
+	position: absolute;
+	bottom: 0;
+	color: black;
+	background: white;
+	border-radius: 2px 2px 0 0;
+	padding: 5px 10px;
+	font-size: 25px;
+	font-weight: lighter;
+}
+.fa-angle-double-up:hover {
+	color: #8FF0E8;
+}
+
+// tablet/mobile only
+ @media only screen and (max-width:1000px){
+	.contact-content {
+		flex-wrap: wrap;
+	}
+	.contact-left-column {
+		margin-bottom:40px;
+		margin-right: 0px;
+	}
+	.contact-right-column {
+		margin-left: 0px;
+	} 
+}
+
