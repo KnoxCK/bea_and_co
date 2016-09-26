@@ -186,23 +186,25 @@
 			<h4>SEND US A MESSAGE</h4>
 		</div>
 	</div>
-	<div class="text-center">
-		<%= link_to "#" do %>
-    	<i class="fa fa-angle-double-up"></i>
-		<% end %>
-	</div>
+	<%= link_to "#" do %>
+    	<i class="fa fa-angle-double-up text-center"></i>
+	<% end %>
 </div>
 <div class="footer">
 	<div class="footer-main text-center">
 		<p>Copyright (c) 2016 Bea & Co.</p>
-		<ul>
-			<i class="fa fa-facebook"></i>
-			<i class="fa fa-twitter"></i>
-			<i class="fa fa-instagram"></i>
-		</ul>
+			<%= link_to "https://www.instagram.com/beacouk/" do %>
+    		<i class="fa fa-instagram"></i>
+			<% end %>
+			<%= link_to "https://www.facebook.com/beaandcouk" do %>
+    		<i class="fa fa-facebook"></i>
+			<% end %>
+			<%= link_to "https://twitter.com/beacoUK" do %>
+    		<i class="fa fa-twitter"></i>
+			<% end %>
 	</div>
 	<div class="footer-login">
-		<p><%= link_to "Login", "#", class: "	login-link" %></p>
+		<p><%= link_to "Login", "#", class: "login-link" %></p>
 	</div>
 </div>
 

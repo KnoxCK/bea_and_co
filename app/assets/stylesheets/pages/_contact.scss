@@ -19,26 +19,28 @@
 .contact-left-column {
 	width: 500px;
 	height: 225px;
-	background-color: black;
+	background: rgba(255,255,255,0.1);
 	margin: 0 40px 20px 0;
 	padding: 20px;
 }
 .contact-right-column {
 	width: 500px;
 	height: 600px;
-	background-color: black;
+	background: rgba(255,255,255,0.1);
 	margin-left: 40px;
 	padding: 20px;
 }
 .fa-angle-double-up {
 	position: absolute;
 	bottom: 0;
+	left: 50%;
 	color: black;
 	background: white;
 	border-radius: 2px 2px 0 0;
 	padding: 5px 10px;
 	font-size: 25px;
 	font-weight: lighter;
+	margin-right: 30px;
 }
 .fa-angle-double-up:hover {
 	color: #8FF0E8;
