@@ -1,0 +1,51 @@
+.team-content {
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	padding-top: 40px;
+}
+.team-member {
+	h5 {
+		margin-top: 20px;
+	}
+	p {
+		color: #888888;
+		font-size: 12px;
+		font-weight: lighter;
+	}
+	img {
+		width: 100%;
+		height: 250px;
+		-webkit-transition: all .5s ease-in-out;
+		opacity: 0.90;
+		
+	}
+	img:hover {
+		-webkit-transform: scale(1.05);
+		opacity: 1;
+	}
+}
+.join-us {
+	filter: brightness(50%);
+	position: relative;
+}
+.join-us:hover {
+	filter: brightness(100%);
+	color: white;
+}
+.join-us-text {
+	color: white;
+	position: absolute;
+  	top: 40px; 
+  	right: 50px;
+  	filter: brightness(100%);
+}
+
+@media only screen and (max-width:1000px){
+	.team-content {
+		flex-wrap: wrap;
+	}
+	.team-member img {
+		margin-bottom: 30px;
+	}
+}

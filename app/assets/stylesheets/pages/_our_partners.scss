@@ -1,0 +1,22 @@
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	height: 90px;
+	margin: 15px 0;
+	-webkit-transition: all .5s ease-in-out;
+}
+.logo:hover {
+	-webkit-transform: scale(1.05);
+}
+
+@media only screen and (max-width:1000px){
+	.logos {
+		flex-wrap: wrap;
+	}
+	.logo {
+		margin-bottom: 30px;
+	}
+}

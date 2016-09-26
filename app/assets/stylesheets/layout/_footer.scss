@@ -1,7 +1,23 @@
 .footer {
 	position: relative;
 }
-
+.arrow-up {
+	display: flex;
+	justify-content: space-around;
+}
+.fa-angle-double-up {
+	position: absolute;
+	top: -32px;
+	color: black;
+	background: white;
+	border-radius: 4px 4px 0 0;
+	padding: 5px 10px;
+	font-size: 25px;
+	font-weight: lighter;
+}
+.fa-angle-double-up:hover {
+	color: #8FF0E8;
+}
 .footer-main {
 	padding: 40px 0;
 	p {
