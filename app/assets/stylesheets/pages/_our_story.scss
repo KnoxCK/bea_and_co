@@ -1,15 +1,27 @@
 .our-story-title {
-	padding: 20px;
+	padding: 70px 0 40px 0;
+}
+.our-story-image img {
+	width: 100%;
 }
 .our-story-aside {
+	padding-bottom: 40px;
+}
+.our-story-section {
 	display: flex;
-	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 10px;
+}
+.our-story-text {
 	p {
 		color: #888888;
+		margin-top: 0px;
+	}
+	h4 {
+		margin-top: 0px;
 	}
 }
-.our-story-icons {
-	p {
-		margin: 11px;
-	}
+.our-story-icon {
+		margin: 0 15px;
+		color: #888888;
 }

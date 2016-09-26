@@ -30,21 +30,6 @@
 	margin-left: 40px;
 	padding: 20px;
 }
-.fa-angle-double-up {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	color: black;
-	background: white;
-	border-radius: 2px 2px 0 0;
-	padding: 5px 10px;
-	font-size: 25px;
-	font-weight: lighter;
-	margin-right: 30px;
-}
-.fa-angle-double-up:hover {
-	color: #8FF0E8;
-}
 
 // tablet/mobile only
  @media only screen and (max-width:1000px){
@@ -52,11 +37,16 @@
 		flex-wrap: wrap;
 	}
 	.contact-left-column {
-		margin-bottom:40px;
+		margin-bottom:20px;
 		margin-right: 0px;
+		margin-left: 0px;
 	}
 	.contact-right-column {
 		margin-left: 0px;
+		margin-right: 0px;
 	} 
+	.section-padding {
+		padding: 20px;
+	}
 }
 
