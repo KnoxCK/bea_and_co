@@ -95,10 +95,13 @@
 
 <!-- Fourth section - Our Team -->
 <div class="container section-padding text-center" id="our-team">
+
 	<h3>OUR TEAM</h3>
 	<p>Let us introduce you to some of our amazing creative team. We are delighted to work with over 100 creatives who all maintain successful careers in theatre, film, television, dance, music, art and design. It is this unique connection that enriches our service and makes our offering extra special.</p>
+	
+<!-- First row - team members -->
 	<div class="row team-content">
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-4 col-md-3 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906487/Amy_ltincc.png") %>
 			<h5>Amy</h5>
 			<p>FOUNDER & MANAGING DIRECTOR</p>
@@ -114,17 +117,65 @@
 			<p>HEAD OF CHAPERONES</p>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
-		<div class="join-us">
-			<%= link_to "#" do %>
-	    	<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474909288/BC_Laptop_ginizy.jpg") %>
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906464/Screenshot_2016-09-26_17.10.01_vqb3ya.png") %>
+			<h5>Amy</h5>
+			<p>CREATIVE</p>
+		</div>
+	</div>
+
+<!-- Second row - team members -->
+	<div class="row team-content">
+		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906450/Screenshot_2016-09-26_17.09.54_hbmrp8.png") %>
+			<h5>James</h5>
+			<p>CREATIVE</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906469/Screenshot_2016-09-26_17.10.17_t6iaqv.png") %>
+			<h5>Claudia</h5>
+			<p>CREATIVE</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906473/Screenshot_2016-09-26_17.10.10_cru9ew.png") %>
+			<h5>Lydia</h5>
+			<p>CREATIVE</p>
+		</div>
+
+<!-- Join us box -->
+		<div class="col-xs-12 col-sm-6 col-md-3 text-center">
+			<div class="join-us">
+				<%= link_to "#" do %>
+		    	<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474909288/BC_Laptop_ginizy.jpg") %>
 	    	<div class="join-us-text">
-	    		<h3>JOIN US!</h3>
-	    		<p>CLICK HERE TO FILL OUT OUR APPLICATION FORM?</p>
+	    		<h1 id="question-mark">?</h1>
+	    		<h3 id="hidden-apply-text">APPLY NOW!</h3>
+	    		<p id="hidden-apply-text">Click here to fill in our application form</p>
 	    	</div>
-	    <% end %>
-	   </div>
-			<h5>Join Us</h5>
-			<p>CAN ANY OF OUR TEAM RECOMMEND YOU?</p>
+	    	<% end %>
+	  	</div>
+			<div class="team-member">
+				<h5>Join Us</h5>
+				<p>CAN ANY OF OUR TEAM RECOMMEND YOU?</p>
+			</div>
+		</div>
+	</div>
+
+<!-- Hidden team members -->
+	<div class="row team-content hidden">
+		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906450/Screenshot_2016-09-26_17.09.54_hbmrp8.png") %>
+			<h5>James</h5>
+			<p>CREATIVE</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906469/Screenshot_2016-09-26_17.10.17_t6iaqv.png") %>
+			<h5>Claudia</h5>
+			<p>CREATIVE</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906473/Screenshot_2016-09-26_17.10.10_cru9ew.png") %>
+			<h5>Lydia</h5>
+			<p>CREATIVE</p>
 		</div>
 	</div>
 </div>
