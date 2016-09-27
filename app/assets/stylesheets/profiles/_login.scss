@@ -1,0 +1,14 @@
+.form-login {
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 100px;
+}
+.text-color-blue a {
+    color: #8FF0E8;
+}
+
+// <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+//   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+// <% end -%>
