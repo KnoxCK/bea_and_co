@@ -1,4 +1,7 @@
-.testimonials {
+.testimonals-section {
+	position: relative;
+}
+.wrapper-grey {
 	padding: 20px;
 	h6 {
 		margin-bottom: 0px;
@@ -20,4 +23,24 @@
 .fa-quote-left {
 	color: #8FF0E8;
 	font-size: 20px;
+}
+.arrows {
+	font-size: 20px;
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #8FF0E8;
+	}
+}
+.arrow-left {
+	position: absolute;
+	top: 50%;
+}
+.arrow-right {
+	position: absolute;
+	top: 50%;
+	right: 20px;
 }
