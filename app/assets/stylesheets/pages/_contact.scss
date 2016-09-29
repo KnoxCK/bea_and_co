@@ -18,10 +18,21 @@
 }
 .contact-left-column {
 	width: 500px;
-	height: 225px;
+	height: 200px;
 	background: rgba(255,255,255,0.1);
 	margin: 0 40px 20px 0;
 	padding: 20px;
+	i {
+		color: #8FF0E8;
+		padding-right: 10px;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #8FF0E8;
+	}
 }
 .contact-right-column {
 	width: 500px;
