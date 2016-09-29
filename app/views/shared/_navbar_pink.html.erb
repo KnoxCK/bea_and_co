@@ -9,20 +9,19 @@
     
 <!-- Navbar menu -->
     <!-- About link -->
-    <%= link_to "ABOUT", "#about", class: "navbar-beaco-pink-link" %>
+    <%= link_to "ABOUT", root_path(:anchor => "about"), class: "navbar-beaco-pink-link" %>  
     <!-- Our Story link -->
-    <%= link_to "OUR STORY", "#our-story", class: "navbar-beaco-pink-link" %>
+    <%= link_to "OUR STORY", root_path(:anchor => "our-story"), class: "navbar-beaco-pink-link" %>  
     <!-- Blog  link -->
-    <%= link_to "BLOG", "#", class: "navbar-beaco-pink-link" %>
+    <%= link_to "BLOG", "#", class: "navbar-beaco-pink-link" %>  
     <!-- Services link -->
-    <%= link_to "SERVICES", "#services", class: "navbar-beaco-pink-link" %>
+    <%= link_to "SERVICES", root_path(:anchor => "service"), class: "navbar-beaco-pink-link" %>  
     <!-- Our Team link -->
-    <%= link_to "OUR TEAM", "#our-team", class: "navbar-beaco-pink-link" %>
+    <%= link_to "OUR TEAM", root_path(:anchor => "our-team"), class: "navbar-beaco-pink-link" %>  
     <!-- Happy People link -->
     <%= link_to "HAPPY PEOPLE", "#happy-people", class: "navbar-beaco-pink-link" %>
     <!-- Chaperones link -->
     <%= link_to "CHAPERONES", chaperone_path, class: "navbar-beaco-pink-link" %>  
-
     <!-- Contact link -->
     <%= link_to "CONTACT", "#contact", class: "navbar-beaco-pink-link" %>    
   </div>
