@@ -1,6 +1,6 @@
 .our-services-banner {
+  height: 100vh;
   color: white;
-  height: auto;
   background-size: cover !important; 
   background-position: center; 
   p {
@@ -12,5 +12,5 @@
 	text-decoration: none;
 }
 #more-info:hover {
-	opacity: 0.5;
+  color: #FE3662;
 }
