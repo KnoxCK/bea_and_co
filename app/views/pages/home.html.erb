@@ -144,14 +144,11 @@
 			<div class="join-us-box">
 		    	<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475150361/wpllto3wkkch8ri4gwzz.png", id: "q-mark") %>
 		    	<div id="apply-now">
-		    		<%= link_to "#" do %>
-			    	<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474909288/BC_Laptop_ginizy.jpg") %>
-			    	<div id="apply-now-text">
+		    		<%= link_to job_applications_path do %>
 				    	<h3>APPLY NOW!</h3>
 			    		<p>Click here to fill in our application form</p>
-		    		</div>
+		    		<% end %>
 		    	</div>
-		    	<% end %>
 	  		</div>
 			<div class="team-member">
 				<h5>Join Us</h5>
