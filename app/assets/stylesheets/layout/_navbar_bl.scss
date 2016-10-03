@@ -9,6 +9,9 @@
   background: transparent;
   border-color: transparent;
 }
+#navbar-background {
+  background-color: black;
+}
 
 /* Optional class to fix the navbar on top */
 .navbar-beaco-fixed {
@@ -30,7 +33,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar-menu {
   padding-right: 40px;
 }
