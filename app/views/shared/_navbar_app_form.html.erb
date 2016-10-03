@@ -1,7 +1,7 @@
-<div class="navbar-beaco-pink navbar-beaco-fixed">
+<div class="navbar-beaco-app navbar-beaco-fixed">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-beaco-brand" do %>
-    <%= image_tag "logo_small_pi.png" %>
+    <%= image_tag "logo_small_bl.png" %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -9,21 +9,21 @@
     
 <!-- Navbar menu -->
     <!-- About link -->
-    <%= link_to "ABOUT", root_path(:anchor => "about"), class: "navbar-beaco-pink-link" %>  
+    <%= link_to "ABOUT", root_path(:anchor => "about"), class: "navbar-beaco-app-link" %>  
     <!-- Our Story link -->
-    <%= link_to "OUR STORY", root_path(:anchor => "our-story"), class: "navbar-beaco-pink-link" %>  
+    <%= link_to "OUR STORY", root_path(:anchor => "our-story"), class: "navbar-beaco-app-link" %>  
     <!-- Blog  link -->
-    <%= link_to "BLOG", "#", class: "navbar-beaco-pink-link" %>  
+    <%= link_to "BLOG", "#", class: "navbar-beaco-app-link" %>  
     <!-- Services link -->
-    <%= link_to "SERVICES", root_path(:anchor => "services"), class: "navbar-beaco-pink-link" %>  
+    <%= link_to "SERVICES", root_path(:anchor => "services"), class: "navbar-beaco-app-link" %>  
     <!-- Our Team link -->
-    <%= link_to "OUR TEAM", root_path(:anchor => "our-team"), class: "navbar-beaco-pink-link" %>  
+    <%= link_to "OUR TEAM", root_path(:anchor => "our-team"), class: "navbar-beaco-app-link" %>  
     <!-- Happy People link -->
-    <%= link_to "HAPPY PEOPLE", "#happy-people", class: "navbar-beaco-pink-link" %>
+    <%= link_to "HAPPY PEOPLE", root_path(:anchor => "happy-people"), class: "navbar-beaco-app-link" %>
     <!-- Chaperones link -->
-    <%= link_to "CHAPERONES", chaperone_path, class: "navbar-beaco-pink-link" %>  
+    <%= link_to "CHAPERONES", chaperone_path, class: "navbar-beaco-app-link" %>  
     <!-- Contact link -->
-    <%= link_to "CONTACT", "#contact", class: "navbar-beaco-pink-link" %>    
+    <%= link_to "CONTACT", root_path(:anchor => "contact"), class: "navbar-beaco-app-link" %>    
   </div>
 
   <!-- Dropdown list appearing on mobile only -->

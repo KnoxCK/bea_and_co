@@ -39,27 +39,20 @@
 	#apply-now {
 		display: block;
 	}
-	#q-mark {
-		display: none;
-	}
 }
 #apply-now {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	img {
-		height: 250px;
-		opacity: 0.5;
-	}
-}
-#apply-now-text {
-	background: rgba(0,0,0, 0.5);
-	position: absolute;
-	top: 0;
-	bottom: 0;
+	height: 350px;
+	background-color: white;
 	width: 100%;
-	color: white;
+	color: #888888;
 	padding-top: 50px;
+	a {
+		color: black;
+		text-decoration: none;
+	}
 }
 
 

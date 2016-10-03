@@ -1,5 +1,5 @@
 /* Main class */
-.navbar-beaco-pink {
+.navbar-beaco-app {
   display: flex;
   height: 70px;
   padding: 0px 60px;
@@ -7,6 +7,7 @@
   justify-content: space-between;
   background-color: white;
   opacity: 0.8;
+  border-bottom: 0.1px solid #F6F6F6;
 }
 
 /* Optional class to fix the navbar on top */
@@ -42,7 +43,7 @@
 // }
 
 /* Navbar standard link */
-.navbar-beaco-pink-link {
+.navbar-beaco-app-link {
   color: #787878;
   font-size: 11px;
   font-weight: lighter;
@@ -50,8 +51,8 @@
   letter-spacing: 1px;
   line-height: 0.5px;
 }
-.navbar-beaco-pink-link:hover {
-  color: #FE3562;
+.navbar-beaco-app-link:hover {
+  color: #8FF0E8;
   text-decoration: none;
 }
 
