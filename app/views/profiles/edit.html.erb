@@ -1,4 +1,3 @@
-<h1>profiles#edit</h1>
 <% content_for(:title) do %>
   Profile Editor
 <% end %>
@@ -12,8 +11,17 @@
         <%= simple_form_for current_user, url: update_profile_path do |f| %>
         <%= f.input :first_name, label: 'First Name' %>
         <%= f.input :last_name, label: 'Last Name' %>
-        <%= f.input :cv_url, label: 'CV download URL' %>
         <%= f.input :phone_number, label: 'Your phone number' %>
+        <%= f.input :nationality, label: 'Your nationality' %>
+        <%= f.input :birth_date, label: 'Your birthday' %>
+        <%= f.input :college, label: 'The College you attended' %>
+        <%= f.input :university, label: 'The University you attended' %>
+        <%= f.input :qualification_held, label: 'Qualification held' %>
+        <%= f.input :professional_training, label: 'Postgraduate/Professional training you received' %>
+        <%= f.input :work_history, label: 'Your work history' %>
+        <%= f.input :musical_instruments, label: 'Do you play any musical instruments?' %>
+        <%= f.input :hobbies, label: 'Your hobbies' %>
+        <%= f.input :exp_with_kids, label: 'Tell us about your experience with children' %>
         <%= f.input :photo, label: 'Photo' %>
         <%= f.input :photo_cache, as: :hidden %>
         <%= f.button :submit %>
