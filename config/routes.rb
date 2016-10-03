@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :applications, only: [:index, :show, :new, :create, :edit, :update]
+  match '/job_applications',     to: 'job_applications#new',             via: 'get'
+  resources "job_applications", only: [:new, :create]
 
   devise_for :users
 

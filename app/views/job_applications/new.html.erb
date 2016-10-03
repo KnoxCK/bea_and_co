@@ -1,0 +1,23 @@
+<div align="center">
+  <h3>Join The Team!</h3>
+
+  <%= simple_form_for @job_application, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true, label: "Your full name" %>
+    <%= f.input :email, :required => true, label: "E-mail address" %>
+    <%= f.input :phone_num, :required => true, label: "Phone number" %>
+    <%= f.input :where_based, :required => true, label: "Where are you based?" %>
+    <%= f.input :dbs_registered, :required => true, label: "Are you registered at DBS? yes or no" %>
+    <%= f.input :self_employed, :required => true, label: "Are you registered as self employed? yes or no" %>
+    <%= f.input :super_power, :required => true, label: "If you had one superpower what would that be, and why?" %>
+    <%= f.input :fav_kids_book, :required => true, label: "What is your favourite chilren's book?" %>
+    <%= f.input :known_employee, :required => true, label: "Do you know anyone who already works for us? Please let us know who" %>
+    <%= f.input :hopeful_cv, :as => :file, label: "Please upload your CV (including two referee details)" %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send Application', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
