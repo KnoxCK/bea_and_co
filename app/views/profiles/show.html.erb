@@ -1,25 +1,60 @@
+<%= render 'shared/navbar_app_form' %>
 <% content_for(:title) do %>
   <%= @user.first_name %>
 <% end %>
 
-<div class="wrapper">
-  <div class="container">
-    <div class="show-profile-details profile-card-white text-center">
+<div class="wrapper-grey">
+  <div class="profile-details">
+    <div class="container welcome">
       <% if @user == current_user %>
         <h2>Welcome <%= @user.first_name %>!</h2>
+        <%= link_to ("Edit Profile"), edit_profile_path, class: "btn btn-primary beaco-button-pink" %>
+           <%= link_to ("Download as PDF"), "", class: "btn btn-primary beaco-button-pink" %>
       <% else %>
-        <h2><%= @user.first_name %> <%= @user.last_name %></h2>
+        <h3><%= @user.first_name %>'s Profile</h3>
+          <%= link_to ("Edit Profile"), edit_profile_path, class: "btn btn-primary beaco-button-pink" %>
+          <%= link_to ("Download as PDF"), "", class: "btn btn-primary beaco-button-pink" %>
       <% end %>
-      <%= cl_image_tag(@user.photo, width: 100, height: 100, crop: :fill, class: "profile-avatar-large my-profile-avatar") %>
-      <p><ul>
-        <li class=>Name: <em><%= @user.first_name %> <%= @user.last_name %></em></li>
-        <li class=>Email: <em><%= @user.email %></em></li>
-        <li class=>Phone: <em><%= @user.phone_number %></em></li>
-        <% if @user == current_user %>
-          <%= link_to t("Edit Profile"), edit_profile_path, class: "btn btn-warning profile-edit-btn my-profile-btn" %>
-        <% end %>
-      </ul></p>
+    </div>
+    <div class="container profile-card-white">
+      <h5 class="profile-section-label">PROFILE</h5>
+      <div class="profile-main-card"> 
+        <%= cl_image_tag(@user.photo, crop: :fill, class: "profile-photo") %>
+        <div class="profile-main-info">
+          <ul>
+            <li><h3><%= @user.first_name %> <%= @user.last_name %></h3><li>
+            <li><em>Email: </em>&nbsp<%= @user.email %></li>
+            <li><em>Phone: </em>&nbsp<%= @user.phone_number %></li>
+            <li><em>Nationality: </em>&nbsp<%= @user.nationality %></li>
+            <li><em>Birthday: </em>&nbsp<%= @user.birth_date %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="education-info container profile-card-white">
+      <h5 class="profile-section-label">EDUCATION</h5>
+      <ul>
+        <li><em>College: </em>&nbsp<%= @user.college %></li>
+        <li><em>University: </em>&nbsp<%= @user.university %></li>
+        <li><em>Qualification held: </em>&nbsp<%= @user.qualification_held %></li>
+      </ul>
+    </div>
+    <div class="professional-info container profile-card-white">
+      <h5 class="profile-section-label">PROFESSIONAL LIFE</h5>
+      <ul>
+        <li><em>Professional training: </em>&nbsp<%= @user.professional_training %></li>
+        <li><em>Work history: </em>&nbsp<%= @user.work_history %></li>
+      </ul>
+    </div>
+    <div class="hobbies-info container profile-card-white">
+      <h5 class="profile-section-label">HOBBIES & EXPERIENCE</h5>
+      <ul>
+        <li><em>Musical instruments: </em>&nbsp<%= @user.musical_instruments %></li>
+        <li><em>Hobbies: </em>&nbsp<%= @user.hobbies %></li>
+        <li><em>Experience with children: </em>&nbsp<%= @user.exp_with_kids %></li>
+      </ul>
     </div>
   </div>
-
 </div>
+<%= render 'shared/footer' %>
+
