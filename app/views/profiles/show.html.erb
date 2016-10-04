@@ -1,21 +1,25 @@
-<%= render 'shared/navbar_app_form' %>
+<% if @user == current_user %>
+  <%= render 'shared/navbar_app_form' %>
+<% else %> 
+  <%= render 'shared/navbar_profile_page' %>
+<% end %>
+
 <% content_for(:title) do %>
   <%= @user.first_name %>
 <% end %>
 
 <div class="wrapper-grey">
+  <div class="welcome text-center">
+    <% if @user == current_user %>
+      <h2>Welcome <%= @user.first_name %>!</h2>
+    <% else %> 
+    <% end %>
+    <% if @user == current_user %>
+      <h3><%= link_to ("Edit Profile"), edit_profile_path, class: "text-center btn btn-primary beaco-button-pink" %></h3>
+    <% else %> 
+    <% end %>
+  </div>
   <div class="profile-details">
-    <div class="container welcome">
-      <% if @user == current_user %>
-        <h2>Welcome <%= @user.first_name %>!</h2>
-        <%= link_to ("Edit Profile"), edit_profile_path, class: "btn btn-primary beaco-button-pink" %>
-           <%= link_to ("Download as PDF"), "", class: "btn btn-primary beaco-button-pink" %>
-      <% else %>
-        <h3><%= @user.first_name %>'s Profile</h3>
-          <%= link_to ("Edit Profile"), edit_profile_path, class: "btn btn-primary beaco-button-pink" %>
-          <%= link_to ("Download as PDF"), "", class: "btn btn-primary beaco-button-pink" %>
-      <% end %>
-    </div>
     <div class="container profile-card-white">
       <h5 class="profile-section-label">PROFILE</h5>
       <div class="profile-main-card"> 
@@ -31,7 +35,7 @@
         </div>
       </div>
     </div>
-    <div class="education-info container profile-card-white">
+    <div class="container profile-card-white">
       <h5 class="profile-section-label">EDUCATION</h5>
       <ul>
         <li><em>College: </em>&nbsp<%= @user.college %></li>
@@ -46,7 +50,7 @@
         <li><em>Work history: </em>&nbsp<%= @user.work_history %></li>
       </ul>
     </div>
-    <div class="hobbies-info container profile-card-white">
+    <div class="container profile-card-white">
       <h5 class="profile-section-label">HOBBIES & EXPERIENCE</h5>
       <ul>
         <li><em>Musical instruments: </em>&nbsp<%= @user.musical_instruments %></li>
@@ -55,6 +59,7 @@
       </ul>
     </div>
   </div>
+  <%= render 'shared/footer_plain' %>
 </div>
-<%= render 'shared/footer' %>
+
 
