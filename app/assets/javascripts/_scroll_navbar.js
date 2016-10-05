@@ -1,4 +1,3 @@
-
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -10,4 +9,3 @@ $(window).scroll(function() {
         $(".navbar-beaco-scroll").addClass("hidden");
     }
 });
-
