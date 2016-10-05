@@ -26,3 +26,12 @@
 	color: #FE3562;
 	opacity: 0.8;
 }
+// mobile only
+@media only screen and (max-width:723px){
+  	.our-story-title {
+		padding: 45px 0 40px 0;
+	}
+	.our-story-section {
+	   padding-right: 10px;
+	}
+}

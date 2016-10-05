@@ -8,7 +8,7 @@
 </div>
 
 <!-- First section - Personally Recommended-->
-<div class="container section-padding text-center" id="about">
+<div class="container section-padding text-center about" id="about">
 	<h3>PERSONALLY RECOMMENDED</h3>
 		<p>Bea & Co is a unique London members’ agency specialising in providing families and organisations with excellent child care from the highest quality creative people. Whether private or corporate, Bea & Co offers a highly individual first class service tailored to each of our members' needs.</p>
 </div>
@@ -59,35 +59,36 @@
 </div>	
 
 <!-- Third section - Our Services -->
-<div class="our-services-banner text-center" id="services" style="background-image: linear-gradient(
+<div class="our-services-banner" id="services" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)), url('http://res.cloudinary.com/ddota4fci/image/upload/o_66/v1474900030/BC_Laptop_ginizy.jpg');">
-  <div class="section-padding">
-  	<h3>OUR SERVICES</h3>
+  <div class="container">
+  	<h3 class="text-center section-padding">OUR SERVICES</h3>
     <div class="row">
-    	<div class="col-xs-12 col-sm-6 col-md-4">
+    	<div class="col-xs-12 col-sm-6 col-md-4 services-mobile-padding">
     		<h4>Sitting</h4>
     		<p>All our childsitters are DBS (CRB) checked. Our members use our diverse team of creatives to take care of their little people both at home and abroad - for holiday or business. We are also proud of our small group of “Mannies” who are increasingly sought-after.</p>
     	</div>
-    	<div class="col-xs-12 col-sm-6 col-md-4">
+    	<div class="col-xs-12 col-sm-6 col-md-4 services-mobile-padding">
     		<h4>Theatre, Film & TV Chaperoning</h4>
-    		<p>We work regularly for production and entertainment companies and can provide fully certified chaperones at all stages of theatre, television and film projects, both nationally and internationally. <%= link_to "More information →", chaperone_path, id: "more-info" %></p>
+    		<p>We work regularly for production and entertainment companies and can provide fully certified chaperones at all stages of theatre, television and film projects, both nationally and internationally.</p>
+    		<p><%= link_to "More information →", chaperone_path, id: "more-info" %></p>
     	</div>
-    	<div class="col-xs-12 col-sm-6 col-md-4">
+    	<div class="col-xs-12 col-sm-6 col-md-4 services-mobile-padding">
     		<h4>For Business</h4>
     		<p>We work closely with businesses to cater for internal childcare packages, in house events, and partnerships that enrich client and customer experience. Our creative talent pool gives Bea & Co. the innovative and personable edge in providing a service tailor-made to fit your company culture.</p>
     	</div>
   	</div>
     <div class="row">
-    	<div class="col-xs-12 col-sm-6 col-md-4">
+    	<div class="col-xs-12 col-sm-6 col-md-4 services-mobile-padding">
     		<h4>Hotels</h4>
     		<p>We are the exclusive child care provider of choice for a number of prestigious hotels across London. Our team are straight to work with a number of activities and London adventures to make your child’s stay is just as enjoyable as your own.</p>
     	</div>
-    	<div class="col-xs-12 col-sm-6 col-md-4">
+    	<div class="col-xs-12 col-sm-6 col-md-4 services-mobile-padding">
     		<h4>International</h4>
     		<p>We are often asked to lend a hand when our members travel for business or holiday, and are regularly the first choice for international entertainment projects. Our creatives are well used to touring on complex travel schedules and are masters of finding magic in the face of delays!</p>
     	</div>
-    	<div class="col-xs-12 col-sm-6 col-md-4">
+    	<div class="col-xs-12 col-sm-6 col-md-4 services-mobile-padding">
     		<h4>Events</h4>
     		<p>With a team rooted in the creative industries, we provide a number of helpful services for festivals, summer events, weddings and private parties, including our own adventurous spin on the everyday crèche!</p>
   		</div>
@@ -97,33 +98,35 @@
 
 <!-- Fourth section - Our Team -->
 <div class="container section-padding text-center" id="our-team">
-	<h3>OUR TEAM</h3>
-	<p>Let us introduce you to some of our amazing creative team. We are delighted to work with over 100 creatives who all maintain successful careers in theatre, film, television, dance, music, art and design. It is this unique connection that enriches our service and makes our offering extra special.</p>
+	<div class="our-team">
+		<h3>OUR TEAM</h3>
+		<p>Let us introduce you to some of our amazing creative team. We are delighted to work with over 100 creatives who all maintain successful careers in theatre, film, television, dance, music, art and design. It is this unique connection that enriches our service and makes our offering extra special.</p>
+	</div>
 <!-- First row - team members -->
 	<div class="row team-content">
-		<div class="col-xs-12 col-sm-4 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906487/Amy_ltincc.png") %>
 			<h5>Amy</h5>
 			<p>FOUNDER & MANAGING DIRECTOR</p>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906444/Jamie_ufu0xv.png") %>
 			<h5>James</h5>
 			<p>COO</p>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906455/Screenshot_2016-09-26_17.09.12_qgddts.png") %>
 			<h5>Tanya</h5>
 			<p>HEAD OF CHAPERONES</p>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906464/Screenshot_2016-09-26_17.10.01_vqb3ya.png") %>
 			<h5>Amy</h5>
 			<p>CREATIVE</p>
 		</div>
 	</div>
 <!-- Second row - team members -->
-	<div class="row team-content">
+	<div class="row team-content row-two">
 		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906450/Screenshot_2016-09-26_17.09.54_hbmrp8.png") %>
 			<h5>James</h5>

@@ -15,4 +15,15 @@
 		padding-bottom: 20px;
 	}
 }
-
+// mobile only
+@media only screen and (max-width:723px){
+  .about {
+    margin-bottom: 30px;
+    h3 {
+      padding-top: 25px;
+    }
+    p {
+      padding: 0 20px;
+    }
+  }
+}

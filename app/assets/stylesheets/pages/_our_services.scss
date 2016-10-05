@@ -1,8 +1,8 @@
 .our-services-banner {
-  height: 100vh;
   color: white;
   background-size: cover !important; 
   background-position: center; 
+  padding-bottom: 80px;
   p {
     font-weight: lighter;
   }
@@ -13,4 +13,14 @@
 }
 #more-info:hover {
   color: #FE3662;
+}
+// mobile only
+@media only screen and (max-width:770px){
+  .services-mobile-padding {
+    padding: 10px 10px;
+  }
+  .our-services-banner { 
+    padding: 30px 40px 40px 50px;
+    
+  }
 }

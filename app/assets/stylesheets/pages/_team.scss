@@ -55,12 +55,40 @@
 	}
 }
 
-
-@media only screen and (max-width:1000px){
+// mobile & tablet
+@media only screen and (max-width:1200px){
 	.team-content {
 		flex-wrap: wrap;
+		p {
+			padding: 0 40px 20px 40px;
+		}
 	}
 	.team-member img {
-		margin-bottom: 30px;
+		width: 250px;
+		height: auto;
+	}
+	.our-team {
+		h3 {
+			margin-top: 50px;
+		}
+		p {
+			padding: 0 20px;
+		}
+	}
+	.row-two {
+		padding-top: 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
