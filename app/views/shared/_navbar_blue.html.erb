@@ -46,3 +46,52 @@
   </div>
 </div>
 
+
+<!-- Navbar appearing on scroll -->
+<div class="navbar-beaco-scroll navbar-beaco-fixed hidden">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-beaco-brand" do %>
+    <%= image_tag "logo_small_bl.png" %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-beaco-right hidden-xs hidden-sm">
+  <!-- Navbar menu -->
+    <!-- About link -->
+    <%= link_to "ABOUT", "#about", class: "navbar-beaco-link-scroll" %>
+    <!-- Our Story link -->
+    <%= link_to "OUR STORY", "#our-story", class: "navbar-beaco-link-scroll" %>
+    <!-- Blog  link -->
+    <%= link_to "BLOG", "#", class: "navbar-beaco-link-scroll" %>
+    <!-- Services link -->
+    <%= link_to "SERVICES", "#services", class: "navbar-beaco-link-scroll" %>
+    <!-- Our Team link -->
+    <%= link_to "OUR TEAM", "#our-team", class: "navbar-beaco-link-scroll" %>
+    <!-- Happy People link -->
+    <%= link_to "HAPPY PEOPLE", "#happy-people", class: "navbar-beaco-link-scroll" %>
+    <!-- Chaperones link -->
+    <%= link_to "CHAPERONES", chaperone_path, class: "navbar-beaco-link-scroll" %>  
+    <!-- Contact link -->
+    <%= link_to "CONTACT", "#contact", class: "navbar-beaco-link-scroll" %>    
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-beaco-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-beaco-dropdown-menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#our-story">OUR STORY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#our-team">OUR TEAM</a></li>
+        <li><a href="#happy-people">HAPPY PEOPLE</a></li>
+        <li><a href="#">CHAPERONES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
