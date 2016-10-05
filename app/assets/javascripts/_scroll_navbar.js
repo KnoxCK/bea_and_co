@@ -1,10 +1,12 @@
+
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 600) {
-        $("#navbar-background").addClass("hidden");
-    } else if (scroll <= 600) {
-        $("#navbar-background").removeClass("hidden");
+    if (scroll >= 750) {
+        $("navbar-beaco").addClass("hidden");
+        $(".navbar-beaco-scroll").removeClass("hidden");
+    } else if (scroll <= 750) {
+        $("navbar-beaco").removeClass("hidden");
+        $(".navbar-beaco-scroll").addClass("hidden");
     }
 });
-
