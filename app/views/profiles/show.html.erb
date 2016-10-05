@@ -61,10 +61,9 @@
   </div>
   <div class="text-center">
     <% if @user == current_user %>
-      <h3><%= link_to "Log Out", destroy_user_session_path, class: "btn btn-primary beaco-button-pink" %></h3>
+      <h3><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-primary beaco-button-pink" %></h3>
     <% end %>
   </div>
   <%= render 'shared/footer_plain' %>
 </div>
-
 
