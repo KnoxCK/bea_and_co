@@ -1,5 +1,5 @@
 .welcome {
-  color: #A2A2A2;
+  color: #FE3562;
   h2 {
     padding-top: 95px;
   }
@@ -9,6 +9,7 @@
 }
 .profile-details {
   padding-top: 25px;
+  margin-top: 20px;
   ul {
     list-style-type: none;
     padding: 60px 0 40px 40px;
@@ -63,8 +64,22 @@
     }
   }
 }
+@media only screen and (min-width: 450px){
+  .profile-photo {
+    margin-left: 40px;
+    width: 250px;
+    height: 300px;
+  }
+  .profile-main-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: flex;
+    padding: 0px 0 45px 0;
+  }
+} 
 // desktop only
- @media only screen and (min-width:723px){
+@media only screen and (min-width: 925px){
   .profile-main-card {
     display: flex;
     justify-content: flex-start;
