@@ -1,32 +1,33 @@
 <% content_for(:title) do %>
   Profile Editor
 <% end %>
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3 background-box-grey">
-      <div class="new-header"><h1>Edit profile</h1></div>
-      <div class="form-input">
-        <%= simple_form_for current_user, url: update_profile_path do |f| %>
-        <%= f.input :first_name, label: 'First Name' %>
-        <%= f.input :last_name, label: 'Last Name' %>
-        <%= f.input :phone_number, label: 'Your phone number' %>
-        <%= f.input :nationality, label: 'Your nationality' %>
-        <%= f.input :birth_date, label: 'Your birthday' %>
-        <%= f.input :college, label: 'The College you attended' %>
-        <%= f.input :university, label: 'The University you attended' %>
-        <%= f.input :qualification_held, label: 'Qualification held' %>
-        <%= f.input :professional_training, label: 'Postgraduate/Professional training you received' %>
-        <%= f.input :work_history, label: 'Your work history' %>
-        <%= f.input :musical_instruments, label: 'Do you play any musical instruments?' %>
-        <%= f.input :hobbies, label: 'Your hobbies' %>
-        <%= f.input :exp_with_kids, label: 'Tell us about your experience with children' %>
-        <%= f.input :photo, label: 'Photo' %>
-        <%= f.input :photo_cache, as: :hidden %>
-        <%= f.button :submit %>
-        <% end %>
+<%= render 'shared/navbar_app_form' %>
+<div class="wrapper-grey">
+  <div class="container edit-profile profile-card-white">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="new-header"><h1>Edit profile</h1></div>
+        <div class="form-input">
+          <%= simple_form_for current_user, url: update_profile_path do |f| %>
+          <%= f.input :first_name, label: 'First Name' %>
+          <%= f.input :last_name, label: 'Last Name' %>
+          <%= f.input :phone_number, label: 'Your phone number' %>
+          <%= f.input :nationality, label: 'Your nationality' %>
+          <%= f.input :birth_date, label: 'Your birthday' %>
+          <%= f.input :college, label: 'The College you attended' %>
+          <%= f.input :university, label: 'The University you attended' %>
+          <%= f.input :qualification_held, label: 'Qualification held' %>
+          <%= f.input :professional_training, label: 'Postgraduate/Professional training you received' %>
+          <%= f.input :work_history, label: 'Your work history' %>
+          <%= f.input :musical_instruments, label: 'Do you play any musical instruments?' %>
+          <%= f.input :hobbies, label: 'Your hobbies' %>
+          <%= f.input :exp_with_kids, label: 'Tell us about your experience with children' %>
+          <%= f.input :photo, label: 'Photo' %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <%= f.button :submit, :class=> "btn btn-primary beaco-button-pink" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
