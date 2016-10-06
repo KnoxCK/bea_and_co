@@ -6,6 +6,18 @@
   p {
     font-weight: lighter;
   }
+  h3 {
+    padding-top: 35px;
+  }
+}
+.our-services-icon {
+  padding-top: 12px;
+  text-align: right;
+  color: #8FF0E8;
+}
+.larger-icon {
+  padding-top: 8px;
+  font-size: 20px;
 }
 #more-info {
 	color: #8FF0E8;
@@ -20,7 +32,18 @@
     padding: 10px 10px;
   }
   .our-services-banner { 
-    padding: 30px 40px 40px 50px;
-    
+    padding: 30px 40px 40px 50px; 
+  }
+  .our-services-icon {
+    padding-top: 20px;
+  }
+  .icon-padding {
+    padding-top: 12px;
+  }
+}
+// desktop only
+@media only screen and (min-width:770px){
+  .services-row {
+    padding-right: 60px;
   }
 }
