@@ -16,7 +16,7 @@ class JobApplication < MailForm::Base
   def headers
     {
       :subject => "New Job Application (bea&co.)",
-      :to => "luigi.grazioli.92@gmail.com",
+      :to => "hugo@boscolondon.com",
       :from => %("#{name}" <#{email}>)
     }
   end

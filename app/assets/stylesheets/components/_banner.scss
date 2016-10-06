@@ -1,7 +1,9 @@
  .banner {
+  background-image: linear-gradient(-225deg, rgba(0,10,50,0.1) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474633371/Children_Pirate_image_hbeob3.jpg');
   color: white;
   text-align: center;
-  height: 100vh; 
+  height: 100vh;
+  width: 100%;
   background-size: cover !important;
   position: relative;
   h1 {
@@ -17,10 +19,65 @@
 }
 .banner-content {
   position: absolute;
-  top: 200px; 
-  right: 280px;
+  top: calc(100vh - 65%);
+  right: calc(100vw - 80%);
 }
 .main-logo {
   width: 250px;
   margin-bottom: 20px;
+}
+//smaller screens only
+@media only screen and (max-width:1108px){
+  .banner-content {
+    right: calc(100vw - 85%);
+  }
+}
+// ipad landscape
+@media only screen and (max-width:1052px){
+  .banner-content {
+    right: calc(100vw - 86%);
+  }
+}
+@media only screen and (max-width:962px){
+  .banner-content {
+    right: calc(100vw - 65%);
+  }
+  .banner {
+    background-image: linear-gradient(-225deg, rgba(0,10,50,0.1) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1475765940/Screenshot_2016-10-06_15.57.38_irvotu.png');
+    background-position:center;
+  }
+  .main-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
+// ipad portrait
+@media only screen and (max-width:700px){
+  .banner-content {
+    right: calc(100vw - 60%);
+    width: 150px;
+    background-position: left;
+  }
+}
+// iphone 5 landscape
+@media only screen and (max-width:568px){ 
+  .banner-content {
+    right: calc(100vw - 65%);
+    top: calc(100vh - 75%);
+  }
+}
+// iphone 6 
+@media only screen and (max-width:414px){
+  .banner-content {
+    right: calc(100vw - 70%);
+    width: 150px;
+  }
+}
+@media only screen and (max-width:320px){
+  .banner {
+    background-image: linear-gradient(-225deg, rgba(0,10,50,0.1) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474633371/Children_Pirate_image_hbeob3.jpg');
+  }
+  .banner-content {
+    right: calc(100vw - 77%);
+  }
 }

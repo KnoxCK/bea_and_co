@@ -15,8 +15,8 @@
 		padding-bottom: 20px;
 	}
 }
-// mobile only
-@media only screen and (max-width:723px){
+// mobile/desktop only
+@media only screen and (max-width:962px){
   .about {
     margin-bottom: 30px;
     h3 {
