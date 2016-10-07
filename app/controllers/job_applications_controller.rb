@@ -9,6 +9,8 @@ class JobApplicationsController < ApplicationController
     @job_application.request = request
     if @job_application.deliver
       flash.now[:notice] = 'Thank you for your application. We will get back at you soon!'
+      sleep(3)
+      redirect_to root_path
     else
       flash.now[:error] = 'Cannot send message.'
       render :new
