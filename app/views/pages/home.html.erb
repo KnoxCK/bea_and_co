@@ -70,7 +70,7 @@
 					<i class="fa fa-child"></i>
 				</div>
 			</div>
-	    	<div class="col-xs-11 col-sm-5 col-md-3 services-mobile-padding">
+	    	<div class="col-xs-11 col-md-3 services-mobile-padding">
 	    		<h4>Sitting</h4>
 	    		<p>All our childsitters are DBS (CRB) checked. Our members use our diverse team of creatives to take care of their little people both at home and abroad - for holiday or business. We are also proud of our small group of “Mannies” who are increasingly sought-after.</p>
 	    	</div>
@@ -79,7 +79,7 @@
 					<i class="fa fa-film"></i>
 				</div>
 			</div>
-	    	<div class="col-xs-11 col-sm-5 col-md-3 services-mobile-padding">
+	    	<div class="col-xs-11 col-md-3 services-mobile-padding">
 	    		<h4>Theatre, Film & TV Chaperoning</h4>
 	    		<p>We work regularly for production and entertainment companies and can provide fully certified chaperones at all stages of theatre, television and film projects, both nationally and internationally.</p>
 	    		<p><%= link_to "More information →", chaperone_path, id: "more-info" %></p>
@@ -89,7 +89,7 @@
 		    		<i class="fa fa-briefcase"></i>
 				</div>
 			</div>
-	    	<div class="col-xs-11 col-sm-5 col-md-3">
+	    	<div class="col-xs-11 col-md-3">
 	    		<h4>For Business</h4>
 	    		<p>We work closely with businesses to cater for internal childcare packages, in house events, and partnerships that enrich client and customer experience. Our creative talent pool gives Bea & Co. the innovative and personable edge in providing a service tailor-made to fit your company culture.</p>
 	    	</div>
@@ -101,7 +101,7 @@
 					<i class="fa fa-map-marker"></i>
 				</div>
 			</div>
-	    	<div class="col-xs-11 col-sm-5 col-md-3 services-mobile-padding">
+	    	<div class="col-xs-11 col-md-3 services-mobile-padding">
 	    		<h4>Hotels</h4>
 	    		<p>We are the exclusive child care provider of choice for a number of prestigious hotels across London. Our team are straight to work with a number of activities and London adventures to make your child’s stay is just as enjoyable as your own.</p>
 	    	</div>
@@ -110,7 +110,7 @@
 					<i class="fa fa-plane"></i>
 				</div>
 			</div>
-	    	<div class="col-xs-11 col-sm-5 col-md-3 services-mobile-padding">
+	    	<div class="col-xs-11 col-md-3 services-mobile-padding">
 	    		<h4>International</h4>
 	    		<p>We are often asked to lend a hand when our members travel for business or holiday, and are regularly the first choice for international entertainment projects. Our creatives are well used to touring on complex travel schedules and are masters of finding magic in the face of delays!</p>
 	    	</div>
@@ -119,7 +119,7 @@
 					<i class="fa fa-calendar"></i>
 				</div>
 			</div>
-	    	<div class="col-xs-11 col-sm-5 col-md-3 services-mobile-padding">
+	    	<div class="col-xs-11 col-md-3 services-mobile-padding">
 	    		<h4>Events</h4>
 	    		<p>With a team rooted in the creative industries, we provide a number of helpful services for festivals, summer events, weddings and private parties, including our own adventurous spin on the everyday crèche!</p>
 	  		</div>
@@ -158,25 +158,27 @@
 	</div>
 <!-- Second row - team members -->
 	<div class="row team-content row-two">
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906450/Screenshot_2016-09-26_17.09.54_hbmrp8.png") %>
 			<h5>James</h5>
 			<p>CREATIVE</p>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906469/Screenshot_2016-09-26_17.10.17_t6iaqv.png") %>
 			<h5>Claudia</h5>
 			<p>CREATIVE</p>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 team-member text-center">
 			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906473/Screenshot_2016-09-26_17.10.10_cru9ew.png") %>
 			<h5>Lydia</h5>
 			<p>CREATIVE</p>
 		</div>
 <!-- Join us box -->
-		<div class="col-xs-12 col-sm-6 col-md-3 text-center">
+		<div class="col-xs-12 col-sm-6 col-md-6 text-center">
 			<div class="join-us-box">
+					<%= link_to job_applications_path do %>
 		    	<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475150361/wpllto3wkkch8ri4gwzz.png", id: "q-mark") %>
+		    	<% end %>
 		    	<div id="apply-now">
 		    		<%= link_to job_applications_path do %>
 				    	<h3>APPLY NOW!</h3>
