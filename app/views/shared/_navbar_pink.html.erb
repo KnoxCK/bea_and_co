@@ -31,15 +31,15 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-beaco-dropdown-menu">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#our-story">OUR STORY</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#our-team">OUR TEAM</a></li>
-        <li><a href="#happy-people">HAPPY PEOPLE</a></li>
-        <li><a href="#">CHAPERONES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><%= link_to "ABOUT", root_path(:anchor => "about") %></li>  
+        <li><%= link_to "OUR STORY", root_path(:anchor => "our-story") %></li>  
+        <li><%= link_to "BLOG", "#" %></li>  
+        <li><%= link_to "SERVICES", root_path(:anchor => "services") %></li>  
+        <li><%= link_to "OUR TEAM", root_path(:anchor => "our-team") %></li>  
+        <li><%= link_to "HAPPY PEOPLE", root_path(:anchor => "happy-people") %></li>
+        <li><%= link_to "CHAPERONES", chaperone_path %></li>  
+        <li><%= link_to "CONTACT", root_path(:anchor => "contact") %></li>
+        <li><%= link_to "LOGIN", new_user_session_path %><li>
       </ul>
     </div>
   </div>
