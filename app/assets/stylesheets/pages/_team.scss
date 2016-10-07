@@ -20,9 +20,10 @@
 	}
 	img {
 		width: 100%;
-		height: 250px;
+		height: 275px;
 		-webkit-transition: all .5s ease-in-out;
 		opacity: 0.90;
+		background-image: center;
 		
 	}
 	img:hover {
@@ -32,7 +33,7 @@
 }
 .join-us-box {
 	position: relative;
-	height: 250px;
+	height: 275px;
 	img {
 		height: 240px;
 	}

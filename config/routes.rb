@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   ActiveAdmin.routes(self)
-  match '/job_applications',     to: 'job_applications#new',             via: 'get'
+  match '/job_applications',     to: 'job_applications#new', via: 'get'
   resources "job_applications", only: [:new, :create]
   resources "blog_posts", only: [:index]
 
