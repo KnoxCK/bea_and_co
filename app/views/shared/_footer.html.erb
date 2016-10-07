@@ -1,22 +1,20 @@
 <div class="footer">
-	<div class="arrow-up">
+	<div class="arrow-up text-center">
 		<%= link_to "#" do %>
 	    	<i class="fa fa-angle-double-up"></i>
 		<% end %>
 	</div>
 	<div class="footer-main text-center">
 		<p>Copyright (c) 2016 Bea & Co.</p>
-			<%= link_to "https://www.instagram.com/beacouk/", target: "_blank" do %>
-    		<i class="fa fa-instagram"></i>
-			<% end %>
-			<%= link_to "https://www.facebook.com/beaandcouk", target: "_blank" do %>
-    		<i class="fa fa-facebook"></i>
-			<% end %>
-			<%= link_to "https://twitter.com/beacoUK", target: "_blank" do %>
-    		<i class="fa fa-twitter"></i>
-			<% end %>
-	</div>
-	<div class="footer-login">
-		<p><%= link_to "Login", new_user_session_path, class: "btn btn-primary beaco-button-blue" %></p>
+		<%= link_to "https://www.instagram.com/beacouk/", target: "_blank" do %>
+  		<i class="fa fa-instagram"></i>
+		<% end %>
+		<%= link_to "https://www.facebook.com/beaandcouk", target: "_blank" do %>
+  		<i class="fa fa-facebook"></i>
+		<% end %>
+		<%= link_to "https://twitter.com/beacoUK", target: "_blank" do %>
+  		<i class="fa fa-twitter"></i>
+		<% end %>
+		<p><%= link_to "Login", new_user_session_path, class: "login-link" %></p>
 	</div>
 </div>
