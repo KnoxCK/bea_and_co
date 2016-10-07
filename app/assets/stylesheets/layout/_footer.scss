@@ -1,25 +1,17 @@
 .footer {
-	position: relative;
-}
-.arrow-up {
-	display: flex;
-	justify-content: space-around;
-}
-.fa-angle-double-up {
-	position: absolute;
-	top: -32px;
-	color: black;
-	background: white;
-	border-radius: 4px 4px 0 0;
-	padding: 5px 10px;
-	font-size: 25px;
-	font-weight: lighter;
-}
-.fa-angle-double-up:hover {
+	p {
+		margin-top: 10px;
+	}
+	a {
+		color: #888888;
+	}
+	a:hover {
 	color: #8FF0E8;
+	text-decoration: none;
+	}
 }
 .footer-main {
-	padding: 40px 0;
+	padding-bottom: 40px;
 	p {
 		font-weight: lighter;
 		font-size: 14px;
@@ -37,4 +29,19 @@
 		color: #8FF0E8;
 		border: 1px solid #8FF0E8;
 	}
+}
+.arrow-up {
+	position: relative;
+	top: -30px;
+}
+.arrow-up a {
+	color: black;
+	background: white;
+	border-radius: 4px 4px 0 0;
+	padding: 5px 10px;
+	font-size: 25px;
+	font-weight: lighter;
+}
+.arrow-up a:hover {
+	color: #8FF0E8;
 }
