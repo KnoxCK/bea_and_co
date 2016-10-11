@@ -18,6 +18,21 @@
 .form-group {
 	padding: 5px 0;
 }
+.back-to-homepage {
+	p {
+		font-size: 14px;
+		color: #888888;
+		text-decoration: none;
+
+	}
+	p:hover {
+		color: #8FF0E8;
+	}
+	a {
+		text-decoration: none;
+	}
+	
+}
 // mobile & tablet
 @media only screen and (max-width:1030px){
 	.application-form {

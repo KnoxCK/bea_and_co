@@ -1,16 +1,30 @@
 // Testimonial section
-$(document).on('click', '.test-right-arrow', function(e) {
+$(document).on('click', '.test-arrow-r-one', function(e) {
   $(".test-line-one").addClass("hidden");
 	$(".test-line-two").removeClass("hidden");
-	$(".test-right-arrow").addClass("hidden");
-	$(".test-left-arrow").removeClass("hidden");
+	$(".test-arrow-r-one").addClass("hidden");
+	$(".test-arrow-r-two").removeClass("hidden");
 	e.preventDefault();
 });
-$(document).on('click', '.test-left-arrow', function(e) {
+$(document).on('click', '.test-arrow-l-one', function(e) {
+	$(".test-line-one").addClass("hidden");
+	$(".test-line-two").removeClass("hidden");
+	$(".test-arrow-l-one").addClass("hidden");
+	$(".test-arrow-l-two").removeClass("hidden");
+	e.preventDefault();
+});
+$(document).on('click', '.test-arrow-r-two', function(e) {
+  $(".test-line-one").removeClass("hidden");
+	$(".test-line-two").addClass("hidden");
+	$(".test-arrow-r-two").addClass("hidden");
+	$(".test-arrow-r-one").removeClass("hidden");
+	e.preventDefault();
+});
+$(document).on('click', '.test-arrow-l-two', function(e) {
 	$(".test-line-one").removeClass("hidden");
 	$(".test-line-two").addClass("hidden");
-	$(".test-left-arrow").addClass("hidden");
-	$(".test-right-arrow").removeClass("hidden");
+	$(".test-arrow-l-one").removeClass("hidden");
+	$(".test-arrow-l-two").addClass("hidden");
 	e.preventDefault();
 });
 
