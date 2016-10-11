@@ -8,14 +8,14 @@
       <h2>Join Our Team!</h2>
     </div>
     <%= simple_form_for @job_application, :html => {:class => 'app_form_font' } do |f| %>
-      <%= f.input :name, :required => true, label: "Your full name" %>
+      <%= f.input :name, :required => true, label: "Full name" %>
       <%= f.input :email, :required => true, label: "Email address" %>
       <%= f.input :phone_num, :required => true, label: "Phone number" %>
       <%= f.input :where_based, :required => true, label: "Where are you based?" %>
-      <%= f.input :dbs_registered, :reqquired => true, label: "Are you registered as DBS? (Yes/No)" %>
-      <%= f.input :self_employed, :required => true, label: "Are you registered as self employed? (Yes/No)" %>
-      <%= f.input :super_power, :required => true, label: "If you had one superpower what would it be, and why?" %>
       <%= f.input :fav_kids_book, :required => true, label: "What is your favourite children's book?" %>
+      <%= f.input :super_power, :required => true, label: "If you had one superpower what would it be, and why?" %>
+      <%= f.input :dbs_registered, :reqquired => true, label: "Do you have a current up to date DBS check? (Yes/No)" %>
+      <%= f.input :self_employed, :required => true, label: "Are you registered as self employed? (Yes/No)" %>
       <%= f.input :known_employee, :required => true, label: "Do you know anyone who already works for us? Please let us know who!" %>
       <%= f.input :hopeful_cv, :as => :file, label: "Please upload your CV (including two referee details)" %>
       <div class= "hidden">
