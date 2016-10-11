@@ -14,12 +14,18 @@ $(document).on('click', '.test-left-arrow', function(e) {
 	e.preventDefault();
 });
 
-// Logos section
+// Logos section 1
+$(document).on('click', '.logos-left-arrow', function(e) {
+ 	$(".logos-line-one").addClass("hidden");
+ 	$(".logos-line-four").removeClass("hidden");
+	e.preventDefault();
+});
 $(document).on('click', '.logos-right-arrow', function(e) {
  	$(".logos-line-one").addClass("hidden");
  	$(".logos-line-two").removeClass("hidden");
 	e.preventDefault();
 });
+// Logos section 2
 $(document).on('click', '.logos-left-arrow-two', function(e) {
  	$(".logos-line-one").removeClass("hidden");
  	$(".logos-line-two").addClass("hidden");
@@ -30,8 +36,15 @@ $(document).on('click', '.logos-right-arrow-two', function(e) {
  	$(".logos-line-three").removeClass("hidden");
 	e.preventDefault();
 });
+// Logos section 3
+$(document).on('click', '.logos-right-arrow-three', function(e) {
+ 	$(".logos-line-three").addClass("hidden");
+ 	$(".logos-line-one").removeClass("hidden");
+	e.preventDefault();
+});
 $(document).on('click', '.logos-left-arrow-three', function(e) {
  	$(".logos-line-two").removeClass("hidden");
  	$(".logos-line-three").addClass("hidden");
 	e.preventDefault();
 });
+
