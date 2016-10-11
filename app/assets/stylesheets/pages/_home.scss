@@ -15,6 +15,17 @@
 		padding-bottom: 20px;
 	}
 }
+.form-input {
+  label {
+    font-size: 18px;
+  }
+  input {
+    height: 45px;
+  }
+}
+.edit-profile-form-input {
+    height: 20px;
+}
 // mobile/desktop only
 @media only screen and (max-width:962px){
   .about {
