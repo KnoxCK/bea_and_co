@@ -1,0 +1,2 @@
+class TeamRow < ApplicationRecord
+end

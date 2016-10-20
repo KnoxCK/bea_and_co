@@ -1,0 +1,2 @@
+class FirstParagraphsController < ApplicationController
+end

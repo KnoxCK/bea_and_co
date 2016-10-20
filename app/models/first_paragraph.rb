@@ -1,0 +1,2 @@
+class FirstParagraph < ApplicationRecord
+end

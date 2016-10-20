@@ -1,0 +1,2 @@
+class ServiceParagraphsController < ApplicationController
+end

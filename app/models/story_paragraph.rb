@@ -1,0 +1,2 @@
+class StoryParagraph < ApplicationRecord
+end

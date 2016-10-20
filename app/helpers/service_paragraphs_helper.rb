@@ -1,0 +1,2 @@
+module ServiceParagraphsHelper
+end

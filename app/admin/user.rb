@@ -28,8 +28,11 @@ ActiveAdmin.register User do
     f.inputs "Admin" do
       f.input :admin
     end
+    f.inputs "Team Row ID (for homepage displaying)" do
+      f.input :team_row_id
+    end
     f.actions
   end
 
-  permit_params :email, :admin
+  permit_params :email, :admin, :team_row_id
 end

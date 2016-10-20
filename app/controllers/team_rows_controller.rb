@@ -1,0 +1,2 @@
+class TeamRowsController < ApplicationController
+end
