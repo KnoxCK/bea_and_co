@@ -1,0 +1,2 @@
+module HappyPeopleHelper
+end

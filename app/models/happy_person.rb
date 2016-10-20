@@ -1,0 +1,2 @@
+class HappyPerson < ApplicationRecord
+end

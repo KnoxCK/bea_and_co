@@ -9,8 +9,8 @@
 
 <!-- First section - Personally Recommended-->
 <div class="container section-padding text-center about" id="about">
-	<h3>PERSONALLY RECOMMENDED</h3>
-	<p>Bea & Co is a unique London members’ agency specialising in providing families and organisations with excellent childcare from the highest quality creative people. Whether private or corporate, Bea & Co offers a highly individual first class service tailored to each of our members' needs.</p>
+	<h3><%= @first_par.title.upcase %></h3>
+	<p><%= @first_par.content %></p>
 </div>
 
 <!-- Interval image -->
@@ -27,36 +27,20 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-md-6 our-story-aside">
-			<div class="our-story-section">
-				<div class="our-story-icon">
-					<i class="fa fa-heart-o"></i>
-				</div>
-				<div class="our-story-text">
-					<h4>Born in 2013</h4>
-					<p>Bea & Co. was born in 2013 after we began to see, through our regular work with child actors, that a highly creative environment was hugely valuable in their well-rounded development. At this stage, we were just a small team of close friends, all with a creative background.</p>
-				</div>
-			</div>
-			<div class="our-story-section">
-				<div class="our-story-icon">
-					<i class="fa fa-paper-plane-o"></i>
-				</div>
-				<div class="our-story-text">
-					<h4>Growing up</h4>
-					<p>After spending six months testing our concept of enriching regular child-sitting with play, imagination and creativity, we were noticing happy parents and happy children. By bringing in our influences in theatre, music and the creative industries, we were having a great effect! We began to scale to meet demand and established a larger and more diverse team. They were from this point to be known as our ‘creatives’.</p>
-				</div>
-			</div>
-			<div class="our-story-section">
-				<div class="our-story-icon">
-					<i class="fa fa-users"></i>
-				</div>
-				<div class="our-story-text">
-					<h4>Today</h4>
-					<p>Today our team is stronger and more diverse than ever. Just as it was at the start, every one of our creatives comes personally recommended from within our immediate network, and only those with a proven excellence make the grade! We’re delighted that our members relish the opportunity to allow their children an imaginative environment- whether that be hunting crocodiles with our actors, playing princesses with an opera diva or baking fairy-cakes with a real life ballerina!</p>
-				</div>
-			</div>
+      <% @story_pars.each do |story_par| %>
+  			<div class="our-story-section">
+  				<div class="our-story-icon">
+  					<i class="fa fa-heart-o"></i>
+  				</div>
+  				<div class="our-story-text">
+  					<h4><%= story_par.title %></h4>
+  					<p><%= story_par.content %></p>
+  				</div>
+  			</div>
+      <% end %>w
 		</div>
 	</div>
-</div>	
+</div>
 
 <!-- Third section - Our Services -->
 <div class="our-services-banner" id="services" style="background-image: linear-gradient(
@@ -65,7 +49,7 @@
 	<div class="our-services">
 	  	<h3 class="text-center">OUR SERVICES</h3>
 	    <div class="row services-row">
-	    	<div class="col-xs-1 col-sm-1 col-md-1"> 
+	    	<div class="col-xs-1 col-sm-1 col-md-1">
 		    	<div class="our-services-icon larger-icon">
 					<i class="fa fa-child"></i>
 				</div>
@@ -74,7 +58,7 @@
 	    		<h4>Sitting</h4>
 	    		<p>All our childsitters are DBS (CRB) checked. Our members use our diverse team of creatives to take care of their little people both at home and abroad - for holiday or business. We are also proud of our small group of “Mannies” who are increasingly sought-after.</p>
 	    	</div>
-	    	<div class="col-xs-1 col-sm-1 col-md-1"> 
+	    	<div class="col-xs-1 col-sm-1 col-md-1">
 		    	<div class="our-services-icon">
 					<i class="fa fa-film"></i>
 				</div>
@@ -84,7 +68,7 @@
 	    		<p>We work regularly for production and entertainment companies and can provide fully certified chaperones at all stages of theatre, television and film projects, both nationally and internationally.</p>
 	    		<p><%= link_to "More information →", chaperone_path, id: "more-info" %></p>
 	    	</div>
-	    	<div class="col-xs-1 col-sm-1 col-md-1"> 
+	    	<div class="col-xs-1 col-sm-1 col-md-1">
 		    	<div class="our-services-icon icon-padding">
 		    		<i class="fa fa-briefcase"></i>
 				</div>
@@ -96,7 +80,7 @@
 		</div>
 
 	    <div class="row services-row">
-	    	<div class="col-xs-1 col-sm-1 col-md-1"> 
+	    	<div class="col-xs-1 col-sm-1 col-md-1">
 		    	<div class="our-services-icon larger-icon">
 					<i class="fa fa-map-marker"></i>
 				</div>
@@ -105,7 +89,7 @@
 	    		<h4>Hotels</h4>
 	    		<p>We are the exclusive child care provider of choice for a number of prestigious hotels across London. Our team are straight to work with a number of activities and London adventures to make sure your child’s stay is just as enjoyable as your own.</p>
 	    	</div>
-	    	<div class="col-xs-1 col-sm-1 col-md-1"> 
+	    	<div class="col-xs-1 col-sm-1 col-md-1">
 		    	<div class="our-services-icon larger-icon">
 					<i class="fa fa-plane"></i>
 				</div>
@@ -114,7 +98,7 @@
 	    		<h4>International</h4>
 	    		<p>We are often asked to lend a hand when our members travel for business or holiday.  Our creatives are well used to touring on complex travel schedules and are masters of finding magic in the face of delays!</p>
 	    	</div>
-	    	<div class="col-xs-1 col-sm-1 col-md-1"> 
+	    	<div class="col-xs-1 col-sm-1 col-md-1">
 		    	<div class="our-services-icon">
 					<i class="fa fa-calendar"></i>
 				</div>

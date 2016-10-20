@@ -1,0 +1,2 @@
+class ServiceParagraph < ApplicationRecord
+end

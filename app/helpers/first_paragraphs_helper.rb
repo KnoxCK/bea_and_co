@@ -1,0 +1,2 @@
+module FirstParagraphsHelper
+end
