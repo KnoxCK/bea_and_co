@@ -9,8 +9,10 @@
 
 <!-- First section - Personally Recommended-->
 <div class="container section-padding text-center about" id="about">
-	<h3><%= @first_par.title.upcase %></h3>
-	<p><%= @first_par.content %></p>
+	<% if @first_par %>
+    <h3><%= @first_par.title.upcase %></h3>
+	  <p><%= @first_par.content %></p>
+  <% end %>
 </div>
 
 <!-- Interval image -->
@@ -27,17 +29,19 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-md-6 our-story-aside">
-      <% @story_pars.each do |story_par| %>
-  			<div class="our-story-section">
-  				<div class="our-story-icon">
-  					<i class="fa fa-heart-o"></i>
-  				</div>
-  				<div class="our-story-text">
-  					<h4><%= story_par.title %></h4>
-  					<p><%= story_par.content %></p>
-  				</div>
-  			</div>
-      <% end %>w
+      <% if @story_pars %>
+        <% @story_pars.each do |story_par| %>
+    			<div class="our-story-section">
+    				<div class="our-story-icon">
+    					<i class="fa fa-heart-o"></i>
+    				</div>
+    				<div class="our-story-text">
+    					<h4><%= story_par.title %></h4>
+    					<p><%= story_par.content %></p>
+    				</div>
+    			</div>
+        <% end %>
+      <% end %>
 		</div>
 	</div>
 </div>
