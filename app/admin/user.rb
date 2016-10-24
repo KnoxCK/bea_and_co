@@ -28,8 +28,8 @@ ActiveAdmin.register User do
     f.inputs "Admin" do
       f.input :admin
     end
-    f.inputs "Team Row ID (for homepage displaying)" do
-      f.input :team_row_id
+    f.inputs do
+      f.input :team_row_id, :label => 'Team Row ID (for homepage displaying)', :as => :select, :collection => TeamRow.all.map{|t| ["row number #{t.number}"]}
     end
     f.actions
   end
