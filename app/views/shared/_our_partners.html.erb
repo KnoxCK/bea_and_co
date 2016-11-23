@@ -4,15 +4,15 @@
   	<h3 class="partners-title">OUR PARTNERS</h3>
   <!-- First Row -->
     <div class="logos-line-one"> 
-      <div class="arrows part-arrow-left logos-left-arrow">
+      <div class="arrows part-arrow-left part-l-arrow-js">
           <i><%= link_to (""), "#", class: "fa fa-angle-left" %></i>
       </div>
       <div class="logos">
-      	<%= link_to "http://www.hbo.com", target: "_blank" do %>
-          <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474889840/HBO_iitc9v.png", class: "logo") %>
-        <% end %>
       	<%= link_to "https://www.onefinestay.com", target: "_blank" do %>
           <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1476112954/OFS_t5o96s.png", class: "logo") %>
+        <% end %>
+        <%= link_to "http://www.hbo.com", target: "_blank" do %>
+          <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474889840/HBO_iitc9v.png", class: "logo") %>
         <% end %>
         <%= link_to "https://www.americanexpress.com", target: "_blank" do %>
           <%= image_tag("amex.png", class: "logo-amex") %>
@@ -21,13 +21,13 @@
           <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475850981/DC_n0mpza.jpg", class: "logo") %>
         <% end %>
       </div>
-      <div class="arrows part-arrow-right logos-right-arrow">
+      <div class="arrows part-arrow-right part-r-arrow-js">
         <i><%= link_to (""), "#", class: "fa fa-angle-right" %></i>
       </div> 
     </div>
   <!-- Second Row -->
     <div class="logos-line-two hidden">
-      <div class="arrows part-arrow-left logos-left-arrow-two">
+      <div class="arrows part-arrow-left part-l-arrow-js-two">
         <i><%= link_to (""), "#", class: "fa fa-angle-left" %></i>
       </div>
       <div class="logos">
@@ -41,13 +41,13 @@
           <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1476112689/BE_woz2xa.jpg", class: "logo") %>
         <% end %>
       </div>
-      <div class="arrows part-arrow-right logos-right-arrow-two">
+      <div class="arrows part-arrow-right part-r-arrow-js-two">
   		  <i><%= link_to (""), "#", class: "fa fa-angle-right" %></i>
   	  </div>
     </div>
     <!-- Third Row -->
     <div class="logos-line-three hidden">
-      <div class="arrows part-arrow-left logos-left-arrow-three">
+      <div class="arrows part-arrow-left part-l-arrow-js-three">
         <i><%= link_to (""), "#", class: "fa fa-angle-left" %></i>
       </div>
       <div class="logos">
@@ -61,40 +61,68 @@
           <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475850335/AT2_eesxnb.jpg", class: "logo") %>
         <% end %>
       </div>
-      <div class="arrows part-arrow-right logos-right-arrow-three">
+      <div class="arrows part-arrow-right part-r-arrow-js-three">
         <i><%= link_to (""), "#", class: "fa fa-angle-right" %></i>
       </div>
     </div>
- <!-- Third Row -->
+ <!-- Fourth Row -->
     <div class="logos-line-four hidden">
-      <div class="arrows part-arrow-left logos-left-arrow-four">
+      <div class="arrows part-arrow-left part-l-arrow-js-four">
         <i><%= link_to (""), "#", class: "fa fa-angle-left" %></i>
       </div>
       <div class="logos">
         <%= link_to "http://www.charlieandthechocolatefactory.com/", target: "_blank" do %>
           <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475850427/CC_gbtcru.jpg", class: "logo") %>
         <% end %>
-         <%= link_to "http://thegobetweenmusical.com", target: "_blank" do %>
-            <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475850242/AT_ds5but.jpg", class: "logo") %>
+        <%= link_to "http://thegobetweenmusical.com", target: "_blank" do %>
+          <%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475850242/AT_ds5but.jpg", class: "logo") %>
         <% end %>
       </div>
-      <div class="arrows part-arrow-right logos-right-arrow-four">
+      <div class="arrows part-arrow-right part-r-arrow-js-four">
         <i><%= link_to (""), "#", class: "fa fa-angle-right" %></i>
       </div>
     </div>
   </div>
 </div>
-<hr class= "line">
-<div class="text-center partners-section">
-  <h3 class="partners-title">PRESS</h3>  
-  <div class="logos">
-    <%= image_tag("CNlogo2.png", class: "logo") %>
-    <%= image_tag("ESlogo.png", class: "logo") %>
-    <%= image_tag("CNlogo2.png", class: "logo") %>
-    <%= image_tag("ESlogo.png", class: "logo") %>
+
+<!-- Press section -->
+<div class="wrapper-press">
+  <hr class= "line">
+    <div class="press-section text-center">
+      <h3 class="press-title">PRESS COVERAGE</h3>
+      <!-- First Row -->
+      <div class="press-logos-line-one"> 
+        <div class="arrows press-arrow-left press-l-arrow-js">
+          <i><%= link_to (""), "#", class: "fa fa-angle-left" %></i>
+        </div>
+        <div class="logos">
+          <%= image_tag("ESlogo.png", class: "logo") %>
+          <%= image_tag("CNlogo2.png", class: "logo") %>
+          <%= image_tag("ESlogo.png", class: "logo") %>
+          <%= image_tag("CNlogo2.png", class: "logo") %>
+        </div>
+        <div class="arrows press-arrow-right press-r-arrow-js">
+          <i><%= link_to (""), "#", class: "fa fa-angle-right" %></i>
+        </div> 
+      </div>
+      <!-- Second Row -->
+      <div class="press-logos-line-two hidden">
+        <div class="arrows press-arrow-left press-l-arrow-js-two">
+          <i><%= link_to (""), "#", class: "fa fa-angle-left" %></i>
+        </div>
+        <div class="logos">
+          <%= image_tag("CNlogo2.png", class: "logo") %>
+          <%= image_tag("ESlogo.png", class: "logo") %>
+          <%= image_tag("CNlogo2.png", class: "logo") %>
+          <%= image_tag("ESlogo.png", class: "logo") %>
+        </div>
+        <div class="arrows press-arrow-right press-r-arrow-js-two">
+          <i><%= link_to (""), "#", class: "fa fa-angle-right" %></i>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
 
 
 

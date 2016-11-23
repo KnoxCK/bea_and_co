@@ -1,5 +1,9 @@
 .wrapper-partners {
-	position: relative;
+	height: 300px;
+}
+.wrapper-press {
+	height: 300px;
+	margin-bottom: 10px;
 }
 .logos {
 	display: flex;
@@ -26,17 +30,35 @@
 .part-arrow-left {
 	position: absolute;
 	left: 60px;
-	top: 58%;
+	top: 50%;
 }
 .part-arrow-right {
 	position: absolute;
 	right: 60px;
-	top: 58%;	
+	top: 50%;	
+}
+.press-arrow-left {
+	position: absolute;
+	left: 60px;
+	top: 50%;
+}
+.press-arrow-right {
+	position: absolute;
+	right: 60px;
+	top: 50%;	
 }
 .partners-title {
-	padding: 50px 0 20px 0;
+	padding: 50px 0 5px 0;
+}
+.press-title {
+	padding: 50px 0 30px 0;
 }
 .partners-section {
+	position: relative;
+	padding: 0 100px 50px;
+}
+.press-section {
+	position: relative;
 	padding: 0 100px 50px;
 }
 // tablet only
