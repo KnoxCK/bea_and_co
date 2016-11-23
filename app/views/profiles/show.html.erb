@@ -8,15 +8,7 @@
   <%= @user.first_name %>
 <% end %>
 
-<% if @user == current_user %>
 <div class="wrapper-grey">
-<% else %> 
-<% end %>
-<% if @user != current_user %>
- <div class="wrapper-white">
-<% else %> 
-<% end %>
-
   <div class="welcome text-center">
     <% if @user == current_user %>
       <h2>Welcome <%= @user.first_name %>!</h2>
@@ -28,7 +20,7 @@
     <% end %>
   </div>
   <div class="profile-details">
-      <div class="container profile-card-white">
+    <div class="container profile-card-white">
       <h5 class="profile-section-label">PROFILE</h5>
       <div class="profile-main-card"> 
         <div class="row">
@@ -82,5 +74,5 @@
   </div>
   <%= render 'shared/footer_plain' %>
 </div>
-</div>
+
 
