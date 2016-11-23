@@ -8,7 +8,12 @@
   <%= @user.first_name %>
 <% end %>
 
-<div class="wrapper-grey">
+<% if @user == current_user %>
+  <div class="wrapper-grey">
+<% else %> 
+  <div class="wrapper-white">
+<% end %>
+
   <div class="welcome text-center">
     <% if @user == current_user %>
       <h2>Welcome <%= @user.first_name %>!</h2>
