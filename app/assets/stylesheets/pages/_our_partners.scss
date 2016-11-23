@@ -15,6 +15,14 @@
 .logo:hover {
 	-webkit-transform: scale(1.05);
 }
+.logo-amex {
+	height: 110px;
+	margin: 15px 0;
+	-webkit-transition: all .5s ease-in-out;
+}
+.logo-amex:hover {
+	-webkit-transform: scale(1.05);
+}
 .part-arrow-left {
 	position: absolute;
 	left: 60px;

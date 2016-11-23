@@ -53,12 +53,23 @@ $(document).on('click', '.logos-right-arrow-two', function(e) {
 // Logos section 3
 $(document).on('click', '.logos-right-arrow-three', function(e) {
  	$(".logos-line-three").addClass("hidden");
- 	$(".logos-line-one").removeClass("hidden");
+ 	$(".logos-line-four").removeClass("hidden");
 	e.preventDefault();
 });
 $(document).on('click', '.logos-left-arrow-three', function(e) {
  	$(".logos-line-two").removeClass("hidden");
  	$(".logos-line-three").addClass("hidden");
+	e.preventDefault();
+});
+// Logos section 4
+$(document).on('click', '.logos-right-arrow-four', function(e) {
+ 	$(".logos-line-four").addClass("hidden");
+ 	$(".logos-line-one").removeClass("hidden");
+	e.preventDefault();
+});
+$(document).on('click', '.logos-left-arrow-four', function(e) {
+ 	$(".logos-line-three").removeClass("hidden");
+ 	$(".logos-line-four").addClass("hidden");
 	e.preventDefault();
 });
 
