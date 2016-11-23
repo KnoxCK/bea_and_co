@@ -23,7 +23,11 @@
     <% end %>
   </div>
   <div class="profile-details">
-    <div class="container profile-card-white">
+    <div class="container">
+      <% if @user == current_user %>
+        <div class="profile-card-white">
+      <% else %> 
+      <% end %> 
       <h5 class="profile-section-label">PROFILE</h5>
       <div class="profile-main-card"> 
         <div class="row">
@@ -46,7 +50,11 @@
         </div>
       </div>
     </div>
-    <div class="container profile-card-white">
+    <div class="container">
+      <% if @user == current_user %>
+        <div class="profile-card-white">
+      <% else %> 
+      <% end %> 
       <h5 class="profile-section-label">EDUCATION</h5>
       <ul>
         <li><em>College/Further Education: </em>&nbsp<%= @user.college %></li>
@@ -54,14 +62,22 @@
         <li><em>Qualifications Held: </em>&nbsp<%= @user.qualification_held %></li>
       </ul>
     </div>
-    <div class="professional-info container profile-card-white">
+    <div class="professional-info container">
+      <% if @user == current_user %>
+        <div class="profile-card-white">
+      <% else %> 
+      <% end %> 
       <h5 class="profile-section-label">PROFESSIONAL LIFE</h5>
       <ul>
         <li><em>Professional Training: </em>&nbsp<%= @user.professional_training %></li>
         <li><em>Work History: </em>&nbsp<%= @user.work_history %></li>
       </ul>
     </div>
-    <div class="container profile-card-white">
+    <div class="container">
+    <% if @user == current_user %>
+        <div class="profile-card-white">
+      <% else %> 
+      <% end %> 
       <h5 class="profile-section-label">HOBBIES & EXPERIENCE</h5>
       <ul>
         <li><em>Musical Instruments Played: </em>&nbsp<%= @user.musical_instruments %></li>
