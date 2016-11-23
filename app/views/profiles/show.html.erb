@@ -9,9 +9,12 @@
 <% end %>
 
 <% if @user == current_user %>
-  <div class="wrapper-grey">
+<div class="wrapper-grey">
 <% else %> 
-  <div class="wrapper-white">
+<% end %>
+<% if @user != current_user %>
+ <div class="wrapper-white">
+<% else %> 
 <% end %>
 
   <div class="welcome text-center">
@@ -25,7 +28,7 @@
     <% end %>
   </div>
   <div class="profile-details">
-    <div class="container profile-card-white">
+      <div class="container profile-card-white">
       <h5 class="profile-section-label">PROFILE</h5>
       <div class="profile-main-card"> 
         <div class="row">
@@ -78,5 +81,6 @@
     <% end %>
   </div>
   <%= render 'shared/footer_plain' %>
+</div>
 </div>
 
