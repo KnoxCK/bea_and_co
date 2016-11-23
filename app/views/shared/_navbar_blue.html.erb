@@ -9,23 +9,37 @@
 
 <!-- Navbar menu -->
     <!-- About link -->
-  <div class="click-about">
-    <%= link_to "ABOUT", root_path(:anchor => "about"), class: "navbar-beaco-link" %>
-  </div>
-  <!-- Our Story link -->
-    <%= link_to "OUR STORY", root_path(:anchor => "our-story"), class: "navbar-beaco-link" %>
-    <!-- Blog  link -->
-    <%= link_to "BLOG", blog_posts_path, class: "navbar-beaco-link" %>
-    <!-- Services link -->
-    <%= link_to "SERVICES", root_path(:anchor => "services"), class: "navbar-beaco-link" %>
-    <!-- Our Team link -->
-    <%= link_to "OUR TEAM", root_path(:anchor => "our-team"), class: "navbar-beaco-link" %>
-    <!-- Happy People link -->
-    <%= link_to "HAPPY PEOPLE", root_path(:anchor => "happy-people"), class: "navbar-beaco-link" %>
-    <!-- Chaperones link -->
-    <!--#link_to #"CHAPERONES", #chaperone_path -->
-    <!-- Contact link -->
-    <%= link_to "CONTACT", root_path(:anchor => "contact"), class: "navbar-beaco-link" %>    
+    <div class="outline">
+      <%= link_to "ABOUT", root_path(:anchor => "about"), class: "navbar-beaco-link" %>
+    </div>
+    <!-- Our Story link -->
+    <div class="link-outline">
+      <%= link_to "OUR STORY", root_path(:anchor => "our-story"), class: "navbar-beaco-link" %>
+    </div>
+      <!-- Blog  link -->
+    <div class="link-outline">
+      <%= link_to "BLOG", blog_posts_path, class: "navbar-beaco-link" %>
+    </div>
+      <!-- Services link -->
+    <div class="link-outline">
+      <%= link_to "SERVICES", root_path(:anchor => "services"), class: "navbar-beaco-link" %>
+    </div>
+      <!-- Our Team link -->
+    <div class="link-outline">
+      <%= link_to "OUR TEAM", root_path(:anchor => "our-team"), class: "navbar-beaco-link" %>
+    </div>
+      <!-- Happy People link -->
+    <div class="link-outline">
+      <%= link_to "HAPPY PEOPLE", root_path(:anchor => "happy-people"), class: "navbar-beaco-link" %>
+    </div>
+      <!-- Chaperones link -->
+    <div class="link-outline">
+      <!--#link_to #"CHAPERONES", #chaperone_path -->
+      <!-- Contact link -->
+    </div>
+    <div class="link-outline">
+      <%= link_to "CONTACT", root_path(:anchor => "contact"), class: "navbar-beaco-link" %> 
+    </div>   
   </div>
 
   <!-- Dropdown list appearing on mobile only -->

@@ -6,8 +6,13 @@
 	font-weight: lighter;
 }
 .application-form-title {
-	padding: 60px 0;
-	color: #FE3562;
+	h2 {
+		padding: 60px 0 10px;
+		color: #FE3562;
+	}
+	h4 {
+		padding: 10px 130px 20px;
+	}
 }
 .application-form-image {
 	background-size: cover !important;
@@ -19,20 +24,18 @@
 	padding: 5px 0;
 }
 .back-link {
-	p {
-		font-size: 14px;
+	p, a {
+		font-size: 15px;
 		color: #888888;
-		text-decoration: none;
-
 	}
-	p:hover {
-		color: #8FF0E8;
-	}
-	a {
-		text-decoration: none;
-	}
-	
 }
+.back-link:hover {
+	p, a {
+		color: #8FF0E8;
+		text-decoration: none;
+	}
+}
+
 // mobile & tablet
 @media only screen and (max-width:1030px){
 	.application-form {
