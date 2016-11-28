@@ -9,6 +9,7 @@ class JobApplication < MailForm::Base
   attribute :fav_kids_book
   attribute :known_employee
   attribute :hopeful_cv
+  attribute :accepts_data_treatment
   attribute :nickname,  :captcha  => true
 
   # Declare the e-mail headers. It accepts anything the mail method
