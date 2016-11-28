@@ -19,10 +19,11 @@
       <%= f.input :where_based, :required => true, label: "Where are you based?" %>
       <%= f.input :fav_kids_book, :required => true, label: "What is your favourite children's book and why?" %>
       <%= f.input :super_power, :required => true, label: "If you had one superpower what would it be, and why?" %>
-      <%= f.input :dbs_registered, :reqquired => true, label: "Do you have a current up to date DBS check? (Yes/No)" %>
-      <%= f.input :self_employed, :required => true, label: "Are you registered as self employed? (Yes/No)" %>
+      <%= f.input :dbs_registered, as: :radio_buttons, :required => true, label: "Do you have a current up to date DBS check? " %>
+      <%= f.input :self_employed, as: :radio_buttons, :required => true, label: "Are you registered as self employed? " %>
       <%= f.input :known_employee, :required => true, label: "Do you know anyone who already works for us? Please let us know who!" %>
       <%= f.input :hopeful_cv, :as => :file, label: "Please upload your CV (including two referee details)" %>
+      <%= f.input :accepts_data_treatment, as: :radio_buttons, :required => true, label: "By submitting your application to us you give your permission for us to contact the current creatives you have suggested as supporters of your application. You also give your permission for us to contact the referees listed in your attached CV" %>
       <div class= "hidden">
         <%= f.input :nickname, :hint => 'Leave this field blank!' %>
       </div>
