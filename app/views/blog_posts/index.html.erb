@@ -3,11 +3,12 @@
 <!-- Interval image -->
 <div class="image-interval-blog" style="background-image: linear-gradient(-100deg, rgba(0,10,50,0.1) 0%, rgba(0,36,61,0.6) 70%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474460052/Boy_and_plane_Image_ac1sjn.jpg');">
 	<div class="blog-banner-content">
-	    <h1>THE BEA & CO BLOG</h1>
-  		<h5>JUMP IN!</h5>
+	    <h1>THE <span>BEA & CO</span> BLOG</h1>
+  		<h5><%= link_to "JUMP IN!", "#blog-post" %></h5>
   	</div>
 </div>
 
+<div class= "container" id= "blog-post">
 <div class="container blog-posts">
 	<% @blog_posts.each do |blog_post| %>
 	<div class="blog-post">
@@ -26,6 +27,7 @@
 		</div>
 	</div>
 	<% end %>
+</div>
 </div>
 <%= render 'shared/contact' %>
 <%= render 'shared/footer' %>

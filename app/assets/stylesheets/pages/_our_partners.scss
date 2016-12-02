@@ -4,12 +4,13 @@
 .logos {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 0 30px;
 }
 .logo {
 	height: 90px;
-	margin: 15px 0;
+	margin: 15px 20px;
+
 	-webkit-transition: all .5s ease-in-out;
 }
 .logo:hover {
@@ -25,9 +26,6 @@
 }
 .logo-amex:hover {
 	-webkit-transform: scale(1.05);
-}
-.logo-centurion {
-
 }
 .partners-section {
 	position: relative;
