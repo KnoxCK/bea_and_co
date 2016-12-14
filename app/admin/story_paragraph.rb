@@ -12,6 +12,29 @@ ActiveAdmin.register StoryParagraph do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  permit_params :title, :content
+index do
+    selectable_column
+    column :title
+    column :content
+    column :icon
+    actions
+  end
+
+   form do |f|
+    f.inputs "Title" do
+      f.input :title
+    end
+    f.inputs "Content" do
+      f.input :content
+    end
+    f.inputs do
+      f.input :icon, :label => 'Icon', :as => :select, :collection => ["\"fa fa-heart-o\"", "\"fa fa-heart-o\"", "\"fa fa-heart-o\""]
+    end
+    f.actions
+  end
+
+  permit_params :title, :content, :icon
 
 end
+
+
