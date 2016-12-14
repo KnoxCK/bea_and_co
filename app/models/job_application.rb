@@ -1,8 +1,11 @@
 class JobApplication < MailForm::Base
-  attribute :name,      :validate => true
+  attribute :first_name,      :validate => true
+  attribute :last_name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone_num
   attribute :where_based
+  attribute :experience
+  attribute :why_us
   attribute :dbs_registered
   attribute :self_employed
   attribute :super_power

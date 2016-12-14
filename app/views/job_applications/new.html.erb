@@ -13,15 +13,18 @@
       <h4>Bea & Co welcomes only the very best and most committed creatives to our team, and only ever by recommendation</h4>
     </div>
     <%= simple_form_for @job_application, :html => {:class => 'app_form_font' } do |f| %>
-      <%= f.input :name, :required => true, label: "Full name" %>
+      <%= f.input :first_name, :required => true, label: "First name" %>
+      <%= f.input :last_name, :required => true, label: "Last name" %>
       <%= f.input :email, :required => true, label: "Email address" %>
       <%= f.input :phone_num, :required => true, label: "Phone number" %>
       <%= f.input :where_based, :required => true, label: "Where are you based?" %>
+      <%= f.input :experience, :required => true, label: "What is your experience with children?" %>
       <%= f.input :fav_kids_book, :required => true, label: "What is your favourite children's book and why?" %>
       <%= f.input :super_power, :required => true, label: "If you had one superpower what would it be, and why?" %>
+      <%= f.input :why_us, :required => true, label: "Why would you like to join the Bea & Co team?" %>
+      <%= f.input :known_employee, :required => true, label: "Do you know anyone who already works for us? Please let us know who!" %>
       <%= f.input :dbs_registered, as: :radio_buttons, :required => true, label: "Do you have a current up to date DBS check? " %>
       <%= f.input :self_employed, as: :radio_buttons, :required => true, label: "Are you registered as self employed? " %>
-      <%= f.input :known_employee, :required => true, label: "Do you know anyone who already works for us? Please let us know who!" %>
       <%= f.input :hopeful_cv, :as => :file, label: "Please upload your CV (including two referee details)" %>
       <%= f.input :accepts_data_treatment, as: :radio_buttons, :required => true, label: "By submitting your application to us you give your permission for us to contact the current creatives you have suggested as supporters of your application. You also give your permission for us to contact the referees listed in your attached CV" %>
       <div class= "hidden">
