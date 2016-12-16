@@ -27,9 +27,7 @@ index do
     f.inputs "Content" do
       f.input :content
     end
-    f.inputs do
-      f.input :icon, :label => 'Icon', :as => :select, :collection => ["\"fa fa-heart-o\"", "\"fa fa-heart-o\"", "\"fa fa-heart-o\""]
-    end
+  
     f.actions
   end
 
