@@ -30,10 +30,16 @@
 		</div>
 		<div class="col-xs-12 col-md-6 our-story-aside">
       <% if @story_pars %>
-        <% @story_pars.each do |story_par| %>
+        <% @story_pars.each_with_index do |story_par, index| %>
     			<div class="our-story-section">
     				<div class="our-story-icon">
-    					<i class=<%= "fa fa-heart-o" %>></i>
+              <% if index == 0 %>
+    					  <i class="fa fa-heart-o"></i>
+              <% elsif index == 1 %>
+                <i class="fa fa-eye"></i>
+              <% else %>
+                <i class="fa fa-square-o"></i>
+              <% end %>
     				</div>
     				<div class="our-story-text">
     					<h4><%= story_par.title %></h4>
