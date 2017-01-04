@@ -17,67 +17,75 @@
     color: white;
   }
 }
+@media only screen and (min-width:769px){
 .banner-content {
   position: absolute;
   top: calc(100vh - 65%);
   right: calc(100vw - 80%);
 }
 .main-logo {
-  width: 250px;
-  margin-bottom: 20px;
-}
-//smaller screens only
-@media only screen and (max-width:1108px){
-  .banner-content {
-    right: calc(100vw - 85%);
-  }
-}
-// ipad landscape
-@media only screen and (max-width:1052px){
-  .banner-content {
-    right: calc(100vw - 86%);
-  }
-}
-@media only screen and (max-width:962px){
-  .banner-content {
-    right: calc(100vw - 65%);
-  }
-  .banner {
-    background-image: linear-gradient(-225deg, rgba(0,10,50,0.1) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1475765940/Screenshot_2016-10-06_15.57.38_irvotu.png');
-    background-position:center;
-  }
-  .main-logo {
-    width: 150px;
+    width: 250px;
     margin-bottom: 20px;
   }
 }
-// ipad portrait
-@media only screen and (max-width:700px){
+// IPAD - portrait 767 - 768
+@media only screen and (min-width: 767px) and (max-width:768px){
+   .banner {
+    p {
+      font-size: 20px;
+    }
+  }
   .banner-content {
-    right: calc(100vw - 60%);
-    width: 150px;
-    background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-logo {
+    width: 200px;
+    margin-bottom: 20px;
+    padding-top: 360px;
   }
 }
-// iphone 5 landscape
-@media only screen and (max-width:568px){ 
-  .banner-content {
-    right: calc(100vw - 65%);
-    top: calc(100vh - 75%);
+
+// Galaxy/Nexus - landscape 600 - 766
+@media only screen and (min-width: 600px) and (max-width:766px){ 
+  .main-logo {
+    padding-top: 130px;
+    margin-bottom: 20px;
+    width: 180px;
   }
-}
-// iphone 6 
-@media only screen and (max-width:414px){
-  .banner-content {
-    right: calc(100vw - 70%);
-    width: 150px;
-  }
-}
-@media only screen and (max-width:320px){
   .banner {
-    background-image: linear-gradient(-225deg, rgba(0,10,50,0.1) 50%, rgba(0,36,61,0.6) 80%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474633371/Children_Pirate_image_hbeob3.jpg');
+    p {
+      font-size: 16px;
+    }
   }
-  .banner-content {
-    right: calc(100vw - 77%);
+}
+// IPHONE 5 – landscape 500 - 600
+@media only screen and (min-width: 500px) and (max-width:600px){ 
+  .main-logo {
+    padding-top: 80px;
+    margin-bottom: 20px;
+    width: 170px;
+  }
+  .banner {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+// IPHONE 6 & Plus– portrait 360 - 500
+@media only screen and (min-width: 360px) and (max-width:500px){ 
+  .main-logo {
+    padding-top: 240px;
+    margin-bottom: 20px;
+    width: 180px;
+  }
+}
+// IPHONE 5 & smaller – portrait max 359
+@media only screen and (max-width:359px){ 
+  .main-logo {
+    padding-top: 180px;
+    margin-bottom: 20px;
+    width: 150px;
   }
 }
