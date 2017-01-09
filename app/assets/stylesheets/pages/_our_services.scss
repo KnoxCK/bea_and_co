@@ -30,28 +30,6 @@
 #more-info:hover {
   color: #FE3662;
 }
-// mobile only
-@media only screen and (max-width:770px){
-  .services-mobile-padding {
-    padding: 10px 10px;
-  }
-  .our-services-banner { 
-    padding: 10px 40px 40px 50px; 
-  }
-  .our-services-icon {
-    padding-top: 20px;
-  }
-  .icon-padding {
-    padding-top: 12px;
-  }
-}
-// desktop only
-@media only screen and (min-width:770px){
-  .services-row {
-    padding-right: 60px;
-  }
-}
-
 .our-services-banner {
   color: white;
   background-size: cover !important; 
@@ -64,5 +42,31 @@
     padding-top: 100px;
     padding-bottom: 40px;
 
+  }
+}
+
+// Desktop only - min 769
+@media only screen and (min-width:769px){
+  .services-row {
+    padding-right: 60px;
+  }
+}
+// Mobile only
+@media only screen and (max-width:769px){
+  .services-mobile-padding {
+    padding: 10px 10px;
+  }
+  .our-services-banner { 
+    padding: 10px 40px 40px 50px; 
+    h3 {
+      padding-top: 60px;
+      padding-bottom: 10px; 
+    }
+  }
+  .our-services-icon {
+    padding-top: 20px;
+  }
+  .icon-padding {
+    padding-top: 12px;
   }
 }

@@ -52,8 +52,18 @@
 	}
 }
 // mobile only
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:769px) {
 	.logo {
 		flex-wrap: wrap;
+	}
+	.part-arrow-left {
+		position: absolute;
+		left: 30px;
+		top: 50%;
+	}
+	.part-arrow-right {
+		position: absolute;
+		right: 30px;
+		top: 50%;	
 	}
 }

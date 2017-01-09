@@ -63,18 +63,34 @@
 	.team-member img {
 		width: 250px;
 		height: 275px;
+		padding-top: 10px;
 	}
 	.our-team {
 		h3 {
 			padding-top: 45px;
 		}
 		p {
-			padding: 0 20px;
+			padding: 0 10px 20px;
 		}
 	}
-	.row-two {
-		padding-top: 0;
+	.team-content {
+	padding-top: 0px;
 	}
+}
+// Mobile only
+@media only screen and (max-width:769px){
+	.team-member img {
+		padding-top: 10px;
+	}
+	.join-us-box {
+		padding-top: 20px;
+	}
+}
+// IPHONE 6 & Plus – portrait 500
+@media only screen and (max-width:500px){ 
+	.team-member img {
+		padding: 0 10px;
+	}	
 }
 
 
