@@ -24,7 +24,7 @@
 
 /* Navbar logo */
 .navbar-beaco-brand img {
-  width: 150px;
+    width: 150px;
 }
 
 /* Navbar right section (with form, links, button) */
@@ -79,7 +79,7 @@
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
-    width: 100%;
+  width: 100%;
 }
 .navbar-beaco-dropdown-menu li > a:hover {
   background: transparent !important;
@@ -99,6 +99,7 @@
 }
 .dropdown-toggle-white {
   color: white;
+  font-size: 25px;
 }
 //mobile dropdown
 .dropdown-menu-right {
@@ -131,8 +132,15 @@
 @media only screen and (max-width:1200px){
   .navbar-beaco-scroll {
     opacity: 1;
+  }  
+}
+// Tablet - portrait max 768
+@media only screen and (max-width:768px){
+  .navbar-beaco-brand img {
+      width: 100px;
   }
 }
+
 
 
 
