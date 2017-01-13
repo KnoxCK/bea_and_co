@@ -100,6 +100,10 @@
 .dropdown-toggle-white {
   color: white;
 }
+//mobile dropdown
+.dropdown-menu-right {
+  padding: 30px;
+}
 // On scroll only
 .navbar-beaco-scroll {
   display: flex;
@@ -123,6 +127,20 @@
   color: #8FF0E8;
   text-decoration: none;
 }
-.dropdown-menu-right {
-  padding: 30px;
+// Mobile & Tablet only
+@media only screen and (max-width:1200px){
+  .navbar-beaco-scroll {
+    opacity: 1;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+

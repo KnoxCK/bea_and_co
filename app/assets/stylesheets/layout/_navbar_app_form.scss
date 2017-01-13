@@ -29,9 +29,12 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar-menu {
   padding-right: 40px;
+}
+//mobile dropdown
+.dropdown-menu-right {
+  padding: 30px;
 }
 
 /* Navbar item */
@@ -102,4 +105,11 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+// Mobile & Tablet only
+@media only screen and (max-width:1200px){
+  .navbar-beaco-app {
+    opacity: 1;
+    padding: 30px;
+  }
 }
