@@ -79,6 +79,7 @@
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
+    width: 100%;
 }
 .navbar-beaco-dropdown-menu li > a:hover {
   background: transparent !important;
@@ -121,4 +122,7 @@
 .navbar-beaco-link-scroll:hover {
   color: #8FF0E8;
   text-decoration: none;
+}
+.dropdown-menu-right {
+  padding: 30px;
 }

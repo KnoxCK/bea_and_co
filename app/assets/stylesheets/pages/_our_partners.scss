@@ -6,26 +6,23 @@
 	align-items: center;
 	justify-content: space-around;
 	padding: 0 30px;
+	flex-wrap: wrap;
 }
 .logo {
 	height: 90px;
 	margin: 15px 20px;
-
 	-webkit-transition: all .5s ease-in-out;
 }
 .logo:hover {
 	-webkit-transform: scale(1.05);
 }
+.logo-centurion {
+	height: 40px;
+}
 .logo-amex {
 	height: 110px;
 	margin: 15px 0;
 	-webkit-transition: all .5s ease-in-out;
-}
-.logo-centurion {
-	width: 280px;
-}
-.logo-amex:hover {
-	-webkit-transform: scale(1.05);
 }
 .partners-section {
 	position: relative;
@@ -50,12 +47,19 @@
 	.logos {
 		margin: 0 40px;
 	}
+	.partners-section {
+		position: relative;
+		padding-bottom: 20px;
+	}
+	.wrapper-partners {
+		height: auto;
+	}
+	.logo-centurion {
+		width: 130px;
+	}
 }
 // mobile only
 @media only screen and (max-width:769px) {
-	.logo {
-		flex-wrap: wrap;
-	}
 	.part-arrow-left {
 		position: absolute;
 		left: 30px;
@@ -65,5 +69,10 @@
 		position: absolute;
 		right: 30px;
 		top: 50%;	
+	}
+	.logo-amex {
+	height: 110px;
+	margin: 15px 0;
+	-webkit-transition: all .5s ease-in-out;
 	}
 }

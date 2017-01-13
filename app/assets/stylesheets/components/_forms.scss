@@ -47,6 +47,7 @@ textarea#contact-message {
       font-weight: lighter;
     }
   }
+  padding: 0;
 }
 .contact-message {
   font-weight: lighter;
@@ -61,5 +62,18 @@ textarea#contact-message {
     width: 375px;
   }
 }
+// IPHONE 6 & Plus – portrait 500
+@media only screen and (max-width:500px){ 
+  .contact-right-column {
+    margin: 0 50px;
+  }
+  .contact-input {
+    width: 300px;
+  }
+  textarea#contact-message {
+    width: 300px;
+  }
+}
+
 
 
