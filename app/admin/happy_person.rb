@@ -12,6 +12,38 @@ ActiveAdmin.register HappyPerson do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+
+
+index do
+    selectable_column
+    column :name
+    column :since
+    column :comment
+    column :relation
+    column :location
+    actions
+  end
+
+   form do |f|
+    f.inputs "Name" do
+      f.input :name
+    end
+    f.inputs "Since" do
+      f.input :since
+    end
+    f.inputs "Comment" do
+      f.input :comment
+    end
+    f.inputs "Relation" do
+      f.input :relation
+    end
+    f.inputs "Location" do
+      f.input :location
+    end
+    f.actions
+  end
+
   permit_params :name, :since, :comment, :relation, :location, :rating
 
 end
+

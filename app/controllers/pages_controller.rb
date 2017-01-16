@@ -4,6 +4,8 @@ class PagesController < ApplicationController
   def home
     @first_par = FirstParagraph.first
     @story_pars = StoryParagraph.all
+    @service_paragraphs = ServiceParagraph.all
+    @happy_people = HappyPerson.all
   end
 
   def chaperone

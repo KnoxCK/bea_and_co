@@ -12,6 +12,24 @@ ActiveAdmin.register ServiceParagraph do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+
+index do
+    selectable_column
+    column :title
+    column :content
+    actions
+  end
+
+   form do |f|
+    f.inputs "Title" do
+      f.input :title
+    end
+    f.inputs "Content" do
+      f.input :content
+    end
+    f.actions
+  end
+
   permit_params :title, :content
 
 end
