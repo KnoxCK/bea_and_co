@@ -12,6 +12,24 @@ ActiveAdmin.register TeamRow do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  permit_params :number
 
+index do
+    selectable_column
+    column :first_name
+    column :last_name
+    actions
+  end
+
+   form do |f|
+    f.inputs "First Name" do
+      f.input :first_name
+    end
+    f.inputs "Last Name" do
+      f.input :last_name
+    end
+    f.actions
+  end
+
+  permit_params :first_name, :last_name, :number
 end
+

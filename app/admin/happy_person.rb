@@ -13,7 +13,6 @@ ActiveAdmin.register HappyPerson do
 #   permitted
 # end
 
-
 index do
     selectable_column
     column :name
