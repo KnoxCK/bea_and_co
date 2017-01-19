@@ -28,12 +28,15 @@ ActiveAdmin.register User do
     f.inputs "Admin" do
       f.input :admin
     end
-  
-    f.inputs do
-      f.input :team_row_id, :label => 'Team Row ID (for homepage displaying)', :as => :select, :collection => TeamRow.all.map{|t| ["row number #{t.number}"]}
+    f.inputs "Password" do
+      f.input :password
     end
+    f.inputs "Password Confirmation" do
+      f.input :password_confirmation
+    end
+
     f.actions
   end
 
-  permit_params :email, :admin, :team_row_id
+  permit_params :email, :admin, :password, :password_confirmation
 end
