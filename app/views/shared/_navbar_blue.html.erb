@@ -1,4 +1,4 @@
-<div class="navbar-beaco navbar-beaco-fixed">
+<div class="navbar-beaco navbar-beaco-fixed hidden-xs hidden-sm">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-beaco-brand" do %>
     <%= image_tag "logo_small_bl.png" %>
@@ -72,16 +72,11 @@
     <%= link_to "CONTACT", root_path(:anchor => "contact"), class: "navbar-beaco-link-scroll" %>    
   </div>
 </div>
-  <!-- Dropdown list appearing on mobile only -->
-<div class="navbar-beaco-mobile navbar-beaco-fixed hidden-md hidden-lg">
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-beaco-brand" do %>
-    <%= image_tag "logo_small_bl.png" %>
-  <% end %>
-  <div class="navbar-beaco-item hidden-md hidden-lg">
+
+<div class="navbar-beaco-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-beaco-dropdown-menu">
+      <ul class="dropdown-menu dropdown-menu-main .navbar-beaco-dropdown-menu">
         <li><%= link_to "ABOUT", root_path(:anchor => "about") %></li>  
         <li><%= link_to "OUR STORY", root_path(:anchor => "our-story") %></li>  
         <li><%= link_to "BLOG", blog_posts_path %></li>  
@@ -94,6 +89,4 @@
       </ul>
     </div>
   </div>
-</div>
-
-
+  <!-- Dropdown list appearing on mobile only -->

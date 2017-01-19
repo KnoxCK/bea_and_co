@@ -81,10 +81,6 @@
   padding: 10px 20px;
   width: 100%;
 }
-.navbar-beaco-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
 .navbar-beaco-dropdown-menu:before {
   content: ' ';
   height: 10px;
@@ -96,10 +92,6 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
-}
-.dropdown-toggle-white {
-  color: white;
-  font-size: 25px;
 }
 .dropdown-toggle {
   font-size: 25px;
@@ -145,7 +137,7 @@
 @media only screen and (max-width:1200px){
   .navbar-beaco-scroll {
     opacity: 1;
-  }  
+  }
 }
 // Tablet - portrait max 420
 @media only screen and (max-width:420px){
