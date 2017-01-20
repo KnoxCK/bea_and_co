@@ -124,25 +124,25 @@
 	<% if @user %>
 		<div class="row team-content">
 			<% @user.each_with_index do |user, index| %>
-				<% if index != [0, 1, 2, 3, 4] %>
+				<% if index != 0 || index != 1 %>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 						<%= image_tag(user.photo)%>
 						<h5><%= user.first_name %></h5>
 						<p>CREATIVE</p>
 					</div>
-				<% elsif index != [0, 1, 2, 3, 4] %>
+				<% elsif index != 0 || index != 1%>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 						<%= image_tag(user.photo)%>
 						<h5><%= user.first_name %></h5>
 						<p>CREATIVE</p>
 					</div>
-				<% elsif index != [0, 1, 2, 3, 4] %>
+				<% elsif index != 0 || index != 1%>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 						<%= image_tag(user.photo)%>
 						<h5><%= user.first_name %></h5>
 						<p>CREATIVE</p>
 					</div>
-			<% elsif index != admin %>
+			<% elsif index != 0 || index != 1%>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
 					<%= image_tag(user.photo)%>
 					<h5><%= user.first_name %></h5>
@@ -169,7 +169,6 @@
 				<p>CAN ANY OF OUR TEAM RECOMMEND YOU?</p>
 			</div>
 		</div>
-
 </div>
 	<% end %>
 	</div>
