@@ -6,6 +6,7 @@ class PagesController < ApplicationController
     @story_pars = StoryParagraph.all
     @service_paragraphs = ServiceParagraph.all
     @happy_people = HappyPerson.all
+    @user = User.all
 
   end
 

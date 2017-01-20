@@ -94,6 +94,8 @@
 		<h3>OUR TEAM</h3>
 		<p>Let us introduce you to some of our amazing creative team. We are delighted to work with over 100 creatives who all maintain successful careers in theatre, film, television, dance, music, art and design. It is this unique connection that enriches our service and makes our offering extra special.</p>
 	</div>
+
+
 <!-- First row - team members -->
 	<div class="row team-content">
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
@@ -119,83 +121,57 @@
 	</div>
 
 <!-- Second row - team members -->
-	<div class="row team-content">
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1480700540/Amy_dvxtnj.png", crop: :fit) %>
-			<h5>Amy</h5>
-			<p>CREATIVE</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845413/BETHAN_yaazc1.jpg", crop: :fit) %>
-			<h5>Bethan</h5>
-			<p>CREATIVE</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1476214039/MATTHEW_rfrafo.jpg",crop: :fit) %>
-			<h5>Matthew</h5>
-			<p>CREATIVE</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845419/CRISTINA_tbidpz.jpg", crop: :fit) %>
-			<h5>Cristina</h5>
-			<p>CREATIVE</p>
-		</div>
-	</div>
-
-<!-- Third Row – Team members -->
-	<div class="row team-content row-two">
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845416/JAMES_kgtuvy.jpg", crop: :fit) %>
-			<h5>James</h5>
-			<p>CREATIVE</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1476213991/GRACE_bpjpbk.jpg", crop: :fit) %>
-			<h5>Grace</h5>
-			<p>CREATIVE</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475845412/BELLA_qsd6oe.jpg", crop: :fit) %>
-			<h5>Bella</h5>
-			<p>CREATIVE</p>
-		</div>
+	<% if @user %>
+		<div class="row team-content">
+			<% @user.each_with_index do |user, index| %>
+				<% if index != [0, 1, 2, 3, 4] %>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
+						<%= image_tag(user.photo)%>
+						<h5><%= user.first_name %></h5>
+						<p>CREATIVE</p>
+					</div>
+				<% elsif index != [0, 1, 2, 3, 4] %>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
+						<%= image_tag(user.photo)%>
+						<h5><%= user.first_name %></h5>
+						<p>CREATIVE</p>
+					</div>
+				<% elsif index != [0, 1, 2, 3, 4] %>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
+						<%= image_tag(user.photo)%>
+						<h5><%= user.first_name %></h5>
+						<p>CREATIVE</p>
+					</div>
+			<% elsif index != admin %>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 team-member text-center">
+					<%= image_tag(user.photo)%>
+					<h5><%= user.first_name %></h5>
+					<p>CREATIVE</p>
+				</div>
+			<% else %>
+			<% end %>
+			<% end %>
 <!-- Join us box -->
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
-			<div class="join-us-box">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+				<div class="join-us-box">
 					<%= link_to job_applications_path do %>
-		    	<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475150361/wpllto3wkkch8ri4gwzz.png", id: "q-mark") %>
-		    	<% end %>
+		    			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475150361/wpllto3wkkch8ri4gwzz.png", id: "q-mark") %>
+		    		<% end %>
 		    	<div id="apply-now">
 		    		<%= link_to job_applications_path do %>
 				    	<h3>WORK WITH US</h3>
 			    		<p>Apply to join the Bea & Co team</p>
 		    		<% end %>
 		    	</div>
-	  		</div>
+	  			</div>
 			<div class="team-member">
 				<h5>Join Us</h5>
 				<p>CAN ANY OF OUR TEAM RECOMMEND YOU?</p>
 			</div>
 		</div>
 
-<!-- Hidden team members -->
-		<div class="row team-content hidden">
-			<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906450/Screenshot_2016-09-26_17.09.54_hbmrp8.png") %>
-				<h5>James</h5>
-				<p>CREATIVE</p>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
-				<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906469/Screenshot_2016-09-26_17.10.17_t6iaqv.png") %>
-				<h5>Claudia</h5>
-				<p>CREATIVE</p>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 team-member text-center">
-				<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1474906473/Screenshot_2016-09-26_17.10.10_cru9ew.png") %>
-				<h5>Lydia</h5>
-				<p>CREATIVE</p>
-			</div>
-		</div>
+</div>
+	<% end %>
 	</div>
 </div>
 

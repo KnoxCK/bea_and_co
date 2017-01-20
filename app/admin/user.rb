@@ -18,6 +18,10 @@ ActiveAdmin.register User do
     column :email
     column :created_at
     column :admin
+    column :first_name
+    column :last_name
+    column :photo
+    column :admin
     actions
   end
 
@@ -34,9 +38,18 @@ ActiveAdmin.register User do
     f.inputs "Password Confirmation" do
       f.input :password_confirmation
     end
+    f.inputs "First Name" do
+      f.input :first_name
+    end
+    f.inputs "Last Name" do
+      f.input :last_name
+    end
+    f.inputs "Photo" do
+      f.input :photo
+    end
 
     f.actions
   end
 
-  permit_params :email, :admin, :password, :password_confirmation
+  permit_params :email, :admin, :password, :password_confirmation, :first_name, :last_name, :photo
 end
