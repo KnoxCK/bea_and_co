@@ -8,7 +8,7 @@ class JobApplicationsController < ApplicationController
     @job_application = JobApplication.new(params[:job_application])
     @job_application.request = request
     if @job_application.deliver
-      flash.now[:notice] = 'Thank you for your application. We will get back at you soon!'
+      flash.now[:notice] = 'Thank you. Your application has been received and will be reviewed at our next hiring cycle.'
       sleep(3)
       redirect_to root_path
     else

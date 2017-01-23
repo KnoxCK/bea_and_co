@@ -19,9 +19,9 @@ class JobApplication < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "New Job Application (bea&co.)",
-      :to => "clarissaknox@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :subject => "New Job Application (Bea&Co.)",
+      :to => "knox.ck@gmail.com",
+      :from => %("#{first_name}" <#{email}>)
     }
   end
 end
