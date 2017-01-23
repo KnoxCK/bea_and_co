@@ -2,8 +2,8 @@ ActionMailer::Base.smtp_settings = {
   address: ENV['smtp.postmarkapp.com'],
   port: '25',
   domain: 'heroku.com',
-  user_name: ENV['b78fbca3-d610-40f4-b7a3-2c438dca90b0'],
-  password: ENV['b78fbca3-d610-40f4-b7a3-2c438dca90b0'],
+  user_name: ENV['5df4baf9-bd03-4c88-9295-d73dbdfb9e1e'],
+  password: ENV['5df4baf9-bd03-4c88-9295-d73dbdfb9e1e'],
   authentication: :cram_md5,
   enable_starttls_auto: true
 }
