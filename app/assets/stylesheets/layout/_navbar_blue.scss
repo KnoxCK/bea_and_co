@@ -93,16 +93,28 @@
 //MOBILE: 
 
 //TOGGLE
-.dropdown-toggle {
+
+.dropdown {
   font-size: 25px;
 }
-
-
+.dropdown a {
+  text-decoration: none;
+}
+.dropdown.open a {
+  text-decoration: none;
+}
+.toggle-white a {
+  color: white;
+}
+.toggle-black a {
+  color: black;
+}
 /* Navbar dropdown menu */
 .navbar-beaco-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
+  text-decoration: none;
 }
 .navbar-beaco-dropdown-menu li > a {
   transition: color 0.3s ease;
@@ -128,7 +140,6 @@
 .dropdown-menu-right {
   padding: 30px;
 }
-
 
 
 // Mobile & Tablet only
