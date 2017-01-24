@@ -94,6 +94,12 @@ ActiveRecord::Schema.define(version: 20170124093417) do
     t.string   "icon"
   end
 
+  create_table "team_rows", force: :cascade do |t|
+    t.integer  "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
@@ -123,8 +129,11 @@ ActiveRecord::Schema.define(version: 20170124093417) do
     t.text     "exp_with_kids"
     t.boolean  "admin",                  default: false, null: false
     t.string   "role"
+    t.integer  "team_row_id"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.index ["team_row_id"], name: "index_users_on_team_row_id", using: :btree
   end
 
+  add_foreign_key "users", "team_rows"
 end
