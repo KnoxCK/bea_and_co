@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   ActiveAdmin.routes(self)
-  match '/job_applications',     to: 'job_applications#new', via: 'get'
-  resources "job_applications", only: [:new, :create]
-  resources "blog_posts", only: [:index]
+  match '/jobapps',     to: 'jobapps#new', via: 'get'
   resources "jobapps", only: [:new, :create]
-
+  resources "blog_posts", only: [:index]
+ 
   devise_for :users, :controllers => { :registrations => 'registrations'}
 
   get "/users/:id", to: "profiles#show", as: :profile

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="new-header"><h1>New Booking</h1></div>
+    <div class="form-input">
+      <ul class= "list-style">
+        <%= simple_form_for [ @jobapp] do |f| %>
+          <li><%= f.input :first_name, as: :string, label: 'First Name' %></li>
+          <li><%= f.input :last_name, as: :string, label: 'Last Name' %></li>
+          <li><%= f.button :submit %></li>
+        <% end %>
+      </ul>
+    </div>
+</div>
+
+
