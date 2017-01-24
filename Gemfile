@@ -22,6 +22,7 @@ gem 'carrierwave'
 gem "letter_opener", group: :development
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem "letter_opener", group: :development
 
 group :development, :test do
   gem 'binding_of_caller'
