@@ -1,14 +1,14 @@
 class JobappsController < ApplicationController
 	def new
-		@jobapp = Jobapp.new 
+		@jobapp = Jobapp.new
 	end
 
 	def create
 		@jobapp = Jobapp.new(params[:jobapps])
 		@jobapp.save
-		
+
 		if @jobapp.save
-      		UserMailer.application_creation(@jobapp).deliver_now
+      		JobappMailer.application_creation(@jobapp).deliver_now
      		redirect_to root_path
     	else
       		render :new
