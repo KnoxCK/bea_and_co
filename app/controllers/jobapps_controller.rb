@@ -8,12 +8,11 @@ class JobappsController < ApplicationController
 		@jobapp.save
 
 		if @jobapp.save
-      		JobappMailer.application_creation(@jobapp).deliver_now
+      		JobappmailerMailer.application_creation(@jobapp).deliver_now
      		redirect_to root_path
     	else
       		render :new
     	end
-
 	end
 end
 
