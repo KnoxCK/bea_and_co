@@ -7,7 +7,6 @@ class PagesController < ApplicationController
     @service_paragraphs = ServiceParagraph.all
     @happy_people = HappyPerson.all
     @user = User.all
-
   end
 
   def chaperone
