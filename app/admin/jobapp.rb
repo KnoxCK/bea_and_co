@@ -13,6 +13,7 @@ ActiveAdmin.register Jobapp do
     column :known_employee
     column :dbs_registered
     column :self_employed
+    column :accepts_data_treatment
     actions
   end
 
@@ -49,6 +50,9 @@ ActiveAdmin.register Jobapp do
     end
     f.inputs "Location" do
       f.input :self_employed
+    end
+    f.inputs "Location" do
+    f.input :accepts_data_treatment
     end
     f.actions
   end

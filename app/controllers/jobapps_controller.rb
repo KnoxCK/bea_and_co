@@ -1,5 +1,5 @@
 class JobappsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :new, :create ]
+  skip_before_action :authenticate_user!
 
 	def new
 		@jobapp = Jobapp.new
