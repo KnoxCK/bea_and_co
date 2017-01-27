@@ -1,1 +1,23 @@
-Hi <%= @jobapp.first_name %>
+You have received an application from <%= @jobapp.first_name %>  <%= @jobapp.last_name %>:
+<br></br>
+Name: <%= @jobapp.first_name %> <%= @jobapp.last_name %>
+<br></br>
+Email: <%= @jobapp.email %> 
+<br></br>
+Phone number: <%= @jobapp.phone_num %> 
+<br></br>
+Where based: <%= @jobapp.where_based %> 
+<br></br>
+Past experience: <%= @jobapp.past_experience %>
+<br></br>
+Favourite children's book: <%= @jobapp.fav_kids_book %>
+<br></br>
+Super power: <%= @jobapp.super_power %>
+<br></br>
+Known employee: <%= @jobapp.known_employee %> 
+<br></br>
+DBS registered?: <%= @jobapp.dbs_registered %> 
+<br></br>
+Self-employed?: <%= @jobapp.self_employed %> 
+<br></br>
+<%= link_to "Reply to #{@jobapp.first_name}?", "mailto:#{@jobapp.email}" %>
