@@ -12,6 +12,7 @@ ActiveAdmin.register Jobapp do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
+permit_params :first_name, :last_name, :email, :phone_num, :where_based, :past_experience, :fav_kids_book, :super_power, :known_employee, :dbs_registered, :self_employed
 
 end
+
