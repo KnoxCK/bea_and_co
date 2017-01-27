@@ -24,7 +24,7 @@
       <%= f.input :known_employee, :required => true, label: "Please give the name(s) of current Bea & Co creatives who would be willing to support your application" %>
       <%= f.input :dbs_registered, as: :radio_buttons, :required => true, label: "Do you have a current up to date DBS check?" %>
       <%= f.input :self_employed, as: :radio_buttons, :required => true, label: "Are you registered as self employed?" %>
-      
+      <%= f.input :hopeful_cv, :as => :file, label: "Please upload your CV (including two referee details)" %>
       <%= f.input :accepts_data_treatment, as: :radio_buttons, :required => true, label: "By submitting your application to us you give your permission for us to contact the current creatives you have suggested as supporters of your application. You also give your permission for us to contact the referees listed in your attached CV" %>
       </br>
       <div>
