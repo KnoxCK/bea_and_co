@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-first_par = FirstParagraph.new(title: "Prsonally Reccomended", content: "Bea & Co is a unique London members’ agency specialising in providing families and organisations with excellent childcare from the highest quality creative people. Whether private or corporate, Bea & Co offers a highly individual first class service tailored to each of our members' needs.")
+first_par = FirstParagraph.new(title: "Personally Reccomended", content: "Bea & Co is a unique London members’ agency specialising in providing families and organisations with excellent childcare from the highest quality creative people. Whether private or corporate, Bea & Co offers a highly individual first class service tailored to each of our members' needs.")
 first_par.save!
 
 born = StoryParagraph.new(title: "Born in 2013", content: "Bea & Co. was born in 2013 after we began to see, through our regular work with child actors, that a highly creative environment was hugely valuable in their well-rounded development. At this stage, we were just a small team of close friends, all with a creative background.")
