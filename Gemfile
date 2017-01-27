@@ -19,7 +19,6 @@ gem 'mail_form'
 gem 'autoprefixer-rails'
 gem 'cloudinary', '1.1.0'
 gem 'carrierwave'
-gem "letter_opener", group: :development
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem "letter_opener", group: :development
