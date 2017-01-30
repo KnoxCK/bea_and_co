@@ -9,7 +9,7 @@ class JobappMailer < ApplicationMailer
     @jobapp = jobapp # instance variable
 
     mail(
-      to: "arthur.littmann@gmail.com", # "creatives@beaandco.com",
+      to: "francois@cap-vauban.com", # "creatives@beaandco.com",
       subject:  "An application form has been submitted!"
     )
   end
