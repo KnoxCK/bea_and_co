@@ -20,6 +20,10 @@ DBS registered?: <%= @jobapp.dbs_registered %>
 <br></br>
 Self-employed?: <%= @jobapp.self_employed %>
 <br></br>
-<%= link_to "See CV attached", cl_image_path(@jobapp.upload_cv) %>
+<% if @jobapp.upload_cv %>
+  <%= link_to "See CV attached", cl_image_path(@jobapp.upload_cv) %>
+<% else %>
+  No CV provided
+<% end %>
 <br></br>
 <%= link_to "Reply to #{@jobapp.first_name}?", "mailto:#{@jobapp.email}" %>
