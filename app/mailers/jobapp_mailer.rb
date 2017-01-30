@@ -6,12 +6,11 @@ class JobappMailer < ApplicationMailer
   #   en.jobapp_mailer.application_creation.subject
   #
   def application_creation(jobapp)
-    @jobapp = jobapp # Instance variable => available in view
+    @jobapp = jobapp # instance variable
 
     mail(
-      to: "creatives@beaandco.com",
+      to: "arthur.littmann@gmail.com", # "creatives@beaandco.com",
       subject:  "An application form has been submitted!"
     )
-    # This will render a view in `app/views/user_mailer`!
   end
 end
