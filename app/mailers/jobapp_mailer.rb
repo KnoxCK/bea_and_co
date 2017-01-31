@@ -7,11 +7,6 @@ class JobappMailer < ApplicationMailer
   #
   def application_creation(jobapp)
     @jobapp = jobapp # instance variable
-
-    mail(
-      to: "arthur.littmann@gmail.com",
-      subject:  "An application form has been submitted!"
-    )
     mail(
       to: "creatives@beaandco.com",
       subject:  "An application form has been submitted!"
