@@ -19,7 +19,7 @@
 		<div class="blog-content">
 			<h3><%= blog_post.title %></h3>
 			<%= cl_image_tag ("http://res.cloudinary.com/ddota4fci/image/upload/v1474460052/Boy_and_plane_Image_ac1sjn.jpg"), class: "blog-image" %> 
-			<p><%= blog_post.content %></p>
+			<p><%= simple_format blog_post.content %></p>
 			<hr>
 		</div>
 		<div class="container instagram-feed">
