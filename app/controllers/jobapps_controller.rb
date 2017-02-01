@@ -8,7 +8,7 @@ class JobappsController < ApplicationController
 	def create
 		@jobapp = Jobapp.create(jobapp_params)
 		if @jobapp.save
-     	redirect_to root_path
+     	redirect_to root_path, :alert => 'Thank you. Your application has been received and will be reviewed at our next hiring cycle.'
     else
       render :new
     end
