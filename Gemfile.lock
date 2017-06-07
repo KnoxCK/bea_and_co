@@ -183,6 +183,12 @@ GEM
     pkg-config (1.1.7)
     polyamorous (1.3.1)
       activerecord (>= 3.0)
+    postmark (1.10.0)
+      json
+      rake
+    postmark-rails (0.15.0)
+      actionmailer (>= 3.0.0)
+      postmark (~> 1.10.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -296,6 +302,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mail_form
   pg
+  postmark-rails
   pry-byebug
   pry-rails
   puma

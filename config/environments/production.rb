@@ -1,9 +1,8 @@
 Rails.application.configure do
-  config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method     = :postmark
+  config.action_mailer.postmark_settings   = { api_key: ENV['POSTMARK_API_KEY'] }
   config.action_mailer.default_url_options = { host: "bea-and-co.herokuapp.com/" }
-  # config.action_mailer.delivery_method = :postmark
-  # config.action_mailer.postmark_settings = { :api_token => "5df4baf9-bd03-4c88-9295-d73dbdfb9e1e" }
-
   # Code is not reloaded between requests.
   config.cache_classes = true
 
