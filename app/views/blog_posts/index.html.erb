@@ -17,9 +17,9 @@
 			<h6><%= blog_post.created_at.month %>/<%= blog_post.created_at.year %></h6>
 		</div>
 		<div class="blog-content">
-			<h3><%= blog_post.title %></h3>
+			<h3><%= blog_post.title.html_safe %></h3>
 			<%= cl_image_tag (blog_post.photo), class: "blog-image" %>
-			<p><%= simple_format blog_post.content %></p>
+			<p><%= simple_format blog_post.content.html_safe %></p>
 			<hr>
 		</div>
 		<div class="container instagram-feed">
