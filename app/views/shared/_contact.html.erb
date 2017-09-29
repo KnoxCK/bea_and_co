@@ -17,11 +17,11 @@
 			<h4>SEND US A MESSAGE</h4>
       <div id="contact-form-home">
       <%= simple_form_for @contact do |f| %>
-      <%= f.input :name, input_html: {class: "contact-input"} %>
-      <%= f.input :phone, input_html: {class: "contact-input"} %>
-      <%= f.input :referred_by, input_html: {class: "contact-input"} %>
-      <%= f.input :email, input_html: {class: "contact-input"} %>
-      <%= f.input :message, input_html: {class: "contact-input"} %>
+      <%= f.input :name, input_html: {class: "contact-input"}, label: "Your Name" %>
+      <%= f.input :phone, input_html: {class: "contact-input"}, label: "Your Phone Number" %>
+      <%= f.input :referred_by, input_html: {class: "contact-input"}, label: "Referred By?" %>
+      <%= f.input :email, input_html: {class: "contact-input"} , label: "Your Email" %>
+      <%= f.input :message, input_html: {class: "contact-input"}, label: "Your Message" %>
       <%= f.submit 'Send', class: "btn submit-button-beaco" %>
       <% end %>
       </div>

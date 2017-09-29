@@ -3,7 +3,7 @@ class ContactMailer < ApplicationMailer
     @contact = contact
 
     mail(
-      to: "govinder.marwaha@gmail.com",
+      to: "hello@beaandco.com",
       subject:  "A contact form has been submitted"
       )
   end
