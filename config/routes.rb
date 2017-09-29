@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
+
+  get 'contacts/create'
+
   ActiveAdmin.routes(self)
   match '/jobapps',     to: 'jobapps#new', via: 'get'
   resources "jobapps", only: [:new, :create]
