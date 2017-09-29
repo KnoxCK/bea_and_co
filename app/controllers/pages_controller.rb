@@ -10,5 +10,6 @@ class PagesController < ApplicationController
   end
 
   def chaperone
+    @happy_people = HappyPerson.all
   end
 end
