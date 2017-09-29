@@ -15,7 +15,15 @@
 		</div>
 		<div class="contact-right-column">
 			<h4>SEND US A MESSAGE</h4>
-      <form action="https://formspree.io/hello@beaandco.com" method="POST" id="contact-form-home">
+      <%= simple_form_for @contact do |f| %>
+      <%= f.input :name %>
+      <%= f.input :phone %>
+      <%= f.input :referred_by %>
+      <%= f.input :email %>
+      <%= f.input :message %>
+      <%= f.submit 'Send' %>
+      <% end %>
+    <!--   <form action="https://formspree.io/hello@beaandco.com" method="POST" id="contact-form-home">
         <label>
           <span>Your Name</span><input class="contact-input" type="text" name="Contact Name" style="color: black;">
         </label>
@@ -37,7 +45,7 @@
           <input type="text" name="_gotcha" style="display:none" />
         </label>
           <input type="text" name="_gotcha" style="display:none" />
-      </form>
+      </form> -->
 		</div>
 	</div>
 </div>
