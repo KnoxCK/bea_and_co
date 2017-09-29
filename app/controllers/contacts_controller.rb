@@ -4,6 +4,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       flash[:notice] = "Thank you. Your message was sent"
+      ContactMailer.contact_form(@contact).deliver_now
     else
       flash[:alert] = "You must enter your name, email and a message"
     end
