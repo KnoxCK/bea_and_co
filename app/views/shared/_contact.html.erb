@@ -22,6 +22,7 @@
       <%= f.input :referred_by, input_html: {class: "contact-input"}, label: "Referred By?" %>
       <%= f.input :email, input_html: {class: "contact-input"} , label: "Your Email" %>
       <%= f.input :message, input_html: {class: "contact-input"}, label: "Your Message" %>
+      <%= recaptcha_tags %>
       <%= f.submit 'Send', class: "btn submit-button-beaco" %>
       <% end %>
       </div>
