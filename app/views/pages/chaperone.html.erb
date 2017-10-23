@@ -11,16 +11,28 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, cum beatae porro recusandae fugit iusto deserunt ipsa voluptatibus. Officia quidem nam saepe, enim molestias, nobis facilis officiis recusandae voluptatem quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repudiandae ratione iusto. Earum iste beatae numquam excepturi, cupiditate et illo est quis eum facere debitis eligendi alias modi accusamus nam.</p>
 	</div>
 </div>
-<div class="container chaperone-section chaperone-images">	
+<div class="container chaperone-section chaperone-images">
+  <div class="row">
+  <% @chaperone.each do |chaperone| %>
+    <div class="col-xs-12 col-sm-4 col-md-4 chaperone-image text-center">
+      <%= chaperone.photo %>
+      <h4><%= chaperone.name %></h4>
+      <p><%= chaperone.description %></p>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<!-- <div class="container chaperone-section chaperone-images">
 	<div class="row">
 		<div class="col-xs-12 col-sm-4 col-md-4 chaperone-image text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475145738/sample_xpnleb.jpg") %>
+			<%# image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475145738/sample_xpnleb.jpg") %>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4 chaperone-image text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475145738/sample_xpnleb.jpg") %>
+			<%# image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475145738/sample_xpnleb.jpg") %>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4 chaperone-image text-center">
-			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475145738/sample_xpnleb.jpg") %>
+			<%# image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475145738/sample_xpnleb.jpg") %>
 		</div>
 	</div>
 	<div class="text-center chaperone-info">
@@ -39,7 +51,7 @@
 	    	</div>
 	  	</div>
 	</div>
-</div>
+</div> -->
 <%= render 'shared/happy_people' %>
 <%= render 'shared/our_partners' %>
 <%= render 'shared/contact' %>
