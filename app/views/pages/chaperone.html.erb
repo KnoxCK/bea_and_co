@@ -8,19 +8,24 @@
 <div class="container text-center">
 	<div class="section-padding">
 		<h3>CHAPERONES</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, cum beatae porro recusandae fugit iusto deserunt ipsa voluptatibus. Officia quidem nam saepe, enim molestias, nobis facilis officiis recusandae voluptatem quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repudiandae ratione iusto. Earum iste beatae numquam excepturi, cupiditate et illo est quis eum facere debitis eligendi alias modi accusamus nam.</p>
+		<p><%= @chaperone_paragraph.paragraph %></p>
 	</div>
 </div>
 <div class="container chaperone-section chaperone-images">
   <div class="row">
+  <% count = 1 %>
   <% @chaperone.each do |chaperone| %>
     <div class="col-xs-12 col-sm-4 col-md-4 chaperone-image text-center">
-      <%= chaperone.photo %>
+      <%= cl_image_tag chaperone.photo %>
       <h4><%= chaperone.name %></h4>
       <p><%= chaperone.description %></p>
     </div>
+    <% if count == 3 %>
+      <div class="row">
+    <% end %>
+    <% count += 1 %>
   <% end %>
-</div>
+  </div>
 </div>
 
 <!-- <div class="container chaperone-section chaperone-images">
