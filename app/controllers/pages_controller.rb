@@ -13,5 +13,7 @@ class PagesController < ApplicationController
   def chaperone
     @happy_people = HappyPerson.all
     @contact = Contact.new
+    @chaperone = Chaperone.all
+    @chaperone_paragraph = ChaperonePara.first
   end
 end

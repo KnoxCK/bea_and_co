@@ -1,0 +1,2 @@
+class ChaperonePara < ApplicationRecord
+end
