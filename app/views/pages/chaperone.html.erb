@@ -8,7 +8,7 @@
 <div class="container text-center">
 	<div class="section-padding">
 		<h3>CHAPERONES</h3>
-		<p><%= @chaperone_paragraph.paragraph %></p>
+		<p><%= @chaperone_paragraph.first.try(:paragraph) %></p>
 	</div>
 </div>
 <div class="container chaperone-section chaperone-images">

@@ -14,6 +14,6 @@ class PagesController < ApplicationController
     @happy_people = HappyPerson.all
     @contact = Contact.new
     @chaperone = Chaperone.all
-    @chaperone_paragraph = ChaperonePara.first
+    @chaperone_paragraph = ChaperonePara.all
   end
 end
