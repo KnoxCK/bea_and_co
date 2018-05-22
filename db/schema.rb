@@ -37,6 +37,23 @@ ActiveRecord::Schema.define(version: 20171023175311) do
     t.string   "photo"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "bootsy_image_galleries", force: :cascade do |t|
+    t.string   "bootsy_resource_type"
+    t.integer  "bootsy_resource_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bootsy_images", force: :cascade do |t|
+    t.string   "image_file"
+    t.integer  "image_gallery_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+>>>>>>> 79264cecb3583f124874c9b00d0ef5e029f4652b
   create_table "chaperone_paras", force: :cascade do |t|
     t.text     "paragraph"
     t.datetime "created_at", null: false
@@ -127,6 +144,12 @@ ActiveRecord::Schema.define(version: 20171023175311) do
     t.string   "icon"
   end
 
+  create_table "team_rows", force: :cascade do |t|
+    t.integer  "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
@@ -156,8 +179,11 @@ ActiveRecord::Schema.define(version: 20171023175311) do
     t.text     "exp_with_kids"
     t.boolean  "admin",                  default: false, null: false
     t.string   "role"
+    t.integer  "team_row_id"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.index ["team_row_id"], name: "index_users_on_team_row_id", using: :btree
   end
 
+  add_foreign_key "users", "team_rows"
 end

@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   patch "/profile", to: "profiles#update", as: :update_profile
   get '/chaperone', to: 'pages#chaperone', as: :chaperone
   resources :contacts, only: :create
+  get '/privacypolicy', to: 'pages#privacypolicy'
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
