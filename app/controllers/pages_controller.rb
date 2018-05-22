@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :chaperone ]
+  skip_before_action :authenticate_user!, only: [ :home, :chaperone, :privacypolicy ]
 
   def home
     @first_par = FirstParagraph.first
@@ -12,4 +12,8 @@ class PagesController < ApplicationController
   def chaperone
     @happy_people = HappyPerson.all
   end
+
+  def privacypolicy
+  end
+
 end
