@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170204073941) do
+ActiveRecord::Schema.define(version: 20171023175311) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,30 @@ ActiveRecord::Schema.define(version: 20170204073941) do
     t.datetime "updated_at"
   end
 
+  create_table "chaperone_paras", force: :cascade do |t|
+    t.text     "paragraph"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "chaperones", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "photo"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "referred_by"
+    t.string   "email"
+    t.text     "message"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "first_paragraphs", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
@@ -85,6 +109,13 @@ ActiveRecord::Schema.define(version: 20170204073941) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.string   "upload_cv"
+  end
+
+  create_table "logos", force: :cascade do |t|
+    t.string   "name"
+    t.string   "photo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "partners", force: :cascade do |t|
