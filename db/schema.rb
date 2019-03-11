@@ -37,8 +37,6 @@ ActiveRecord::Schema.define(version: 20171023175311) do
     t.string   "photo"
   end
 
-<<<<<<< HEAD
-=======
   create_table "bootsy_image_galleries", force: :cascade do |t|
     t.string   "bootsy_resource_type"
     t.integer  "bootsy_resource_id"
@@ -53,7 +51,6 @@ ActiveRecord::Schema.define(version: 20171023175311) do
     t.datetime "updated_at"
   end
 
->>>>>>> 79264cecb3583f124874c9b00d0ef5e029f4652b
   create_table "chaperone_paras", force: :cascade do |t|
     t.text     "paragraph"
     t.datetime "created_at", null: false
