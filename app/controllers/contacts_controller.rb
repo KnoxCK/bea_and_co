@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
   skip_before_action :authenticate_user!
   def create
     @contact = Contact.new(contact_params)
-    if verify_recaptcha && @contact.save
+    if @contact.save
       flash[:notice] = "Thank you. Your message was sent"
       ContactMailer.contact_form(@contact).deliver_now
     else
