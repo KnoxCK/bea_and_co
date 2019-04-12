@@ -24,6 +24,8 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 gem 'postmark-rails'
 gem "recaptcha", require: "recaptcha/rails"
+gem "dotenv"
+gem "dotenv-rails"
 
 group :development, :test do
   gem 'binding_of_caller'

@@ -122,6 +122,10 @@ GEM
     debug_inspector (0.0.2)
     domain_name (0.5.20160615)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.7.2)
+    dotenv-rails (2.7.2)
+      dotenv (= 2.7.2)
+      railties (>= 3.2, < 6.1)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
@@ -295,6 +299,8 @@ DEPENDENCIES
   carrierwave
   cloudinary (= 1.1.0)
   devise!
+  dotenv
+  dotenv-rails
   figaro
   font-awesome-sass
   inherited_resources!
@@ -321,4 +327,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.2
+   1.17.3
