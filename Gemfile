@@ -9,7 +9,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise', github: 'plataformatec/devise'
 gem 'redis'
 
-
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
@@ -25,8 +24,6 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 gem 'postmark-rails'
 gem "recaptcha", require: "recaptcha/rails"
-gem "dotenv"
-gem "dotenv-rails"
 
 group :development, :test do
   gem 'binding_of_caller'
