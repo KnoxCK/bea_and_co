@@ -10,14 +10,15 @@
       </div>
       <div class="text-center application-form-title">
         <h2>Join Our Team!</h2>
-        <h4>Bea & Co welcomes only the very best and most committed creatives to our team, and only ever by recommendation</h4>
+        <h4>If you find yourself on this page you may be considering registering your interest in becoming a creative sitter, 'A Creative' with Bea & Co. We welcome only the very best and most committed creatives to our team, and only ever by recommendation. <br><br/>We are lucky enough to work with over 200 creatives who all maintain successful careers in theatre, film, television, dance, music, art and design. Bea & Co works across three main areas: Families, Chaperones and Business Partnerships with select hospitality clients. As a Creative with Bea & Co you can work across any, or all areas, offering as many or a few hours as suits your schedule.</h4>
       </div>
       <%= simple_form_for [ @jobapp], :html => {:class => 'app_form_font' } do |f| %>
       <%= f.input :first_name, required: true, label: "First name" %>
       <%= f.input :last_name, required: true, label: "Last name" %>
       <%= f.input :email, required: true, label: "Email address" %>
       <%= f.input :phone_num, required: true, label: "Phone number" %>
-      <%= f.input :where_based, required: true, label: "Where are you based?" %>
+      <%= f.input :where_based, required: true, label: "Where are you based in London?" %>
+      <%= f.input :super_power, required: true, label: "About Me - Tell us a bit about yourself?" %>
       <%= f.input :past_experience, required: true, label: "What is your experience with children?" %>
       <%= f.input :fav_kids_book, required: true, label: "What is your favourite children's book and why?" %>
       <%= f.input :super_power, required: true, label: "If you had one superpower what would it be, and why?" %>
